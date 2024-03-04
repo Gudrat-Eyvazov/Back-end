@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C6666B41-25AD-4E69-87D3-9C990F97F7BB}</ProjectGuid>
+    <ProjectGuid>{1699FCD8-9A65-44E8-8272-6A30495CFBA8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task_Supermarket_Inventar</RootNamespace>
     <AssemblyName>Task-Supermarket Inventar</AssemblyName>

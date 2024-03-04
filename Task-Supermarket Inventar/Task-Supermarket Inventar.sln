@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-Supermarket Inventar", "Task-Supermarket Inventar.csproj", "{C6666B41-25AD-4E69-87D3-9C990F97F7BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-Supermarket Inventar", "Task-Supermarket Inventar.csproj", "{1699FCD8-9A65-44E8-8272-6A30495CFBA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C6666B41-25AD-4E69-87D3-9C990F97F7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6666B41-25AD-4E69-87D3-9C990F97F7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6666B41-25AD-4E69-87D3-9C990F97F7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6666B41-25AD-4E69-87D3-9C990F97F7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1699FCD8-9A65-44E8-8272-6A30495CFBA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1699FCD8-9A65-44E8-8272-6A30495CFBA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1699FCD8-9A65-44E8-8272-6A30495CFBA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1699FCD8-9A65-44E8-8272-6A30495CFBA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {01E6E2C9-46A1-423A-8C20-AF7D4F53B0D7}
+		SolutionGuid = {C0CE082D-88E3-4276-AE46-1F63179E4EAA}
 	EndGlobalSection
 EndGlobal
