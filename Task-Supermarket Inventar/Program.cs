@@ -10,6 +10,7 @@ namespace Task_Supermarket_Inventar
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
