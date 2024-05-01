@@ -1,0 +1,76 @@
+
+
+#client-logos .item {
+    margin: 1px;
+}
+.cover-wrapper {
+    padding: 0 50px 75px;
+}
+.client-inners img {
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.client-inners {
+    border: 1px solid #ccc;
+    height: 85px;
+    text-align: center;
+    padding: 8px;
+}
+
+#client-logos .slick-arrow img {
+    width: 34px;
+}
+
+#client-logos .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#client-logos .slick-prev {
+    left: -38px;
+}
+
+#client-logos .slick-next {
+    right: -38px;
+}
+
+#client-logos .slick-list {
+    margin: 0 -10px;
+}
+
+#client-logos .slick-slide {
+    margin: 0 10px;
+}
+
+    .card {
+  box-shadow: 0  4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 3rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.txtcard{
+    padding: 1rem;
+}
+.txtcard h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F94B7;
+}
+.txtcard p{
+    color: #F1B640;
+    font-weight: 600;
+}
+.section-head{
+      font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    color:#000000;
+}

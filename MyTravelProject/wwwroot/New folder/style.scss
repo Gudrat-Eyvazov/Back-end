@@ -1,0 +1,345 @@
+@import "variables.scss";
+@import "extensions.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Roboto, "Arial Narrow", Arial, sans-serif;
+  font-size: 100%;
+  height: 200vh;
+  overflow-y: scroll;
+}
+
+.travelomnia__header {
+  width: 100%;
+  height: 130px;
+
+  &__container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    @include flex(space-between, center);
+
+    &__logo {
+      width: toRem(142px);
+      object-fit: contain;
+    }
+
+    & > .pure-css-nav {
+      & > nav {
+        & > ul {
+          font-size: 1rem;
+
+          & > li {
+            background: transparent;
+            border-radius: 4px;
+
+            & > a:first-child:nth-last-child(2)::after {
+              display: none;
+            }
+
+            &:hover {
+              background-color: #1f94b7;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+
+              & > a:first-child {
+                color: white;
+                background-color: transparent;
+              }
+            }
+
+            & > a:after {
+              display: none;
+            }
+
+            & > ul {
+              background-color: #1f94b7;
+              padding: 10px 0;
+              border-radius: 0 4px 4px 4px;
+
+              & > li {
+                position: relative;
+                background-color: transparent;
+
+                & > a {
+                  padding: 10px 40px 10px 25px;
+                  color: white;
+                }
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  width: 3px;
+                  background-color: #f1b640;
+                  display: none;
+                }
+              }
+
+              li:hover {
+                background-color: #27acd3;
+
+                &::before {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__account {
+      @include flex(space-between, center);
+      min-width: 200px;
+
+      &__language {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        margin-right: 10px;
+        background-color: transparent;
+      }
+
+      &__auth {
+        display: none;
+        min-width: 190px;
+        height: 50px;
+        @include flex(flex-end, center);
+
+        &__notify {
+          width: 20px;
+          margin-right: 10px;
+          position: relative;
+
+          &::after {
+            content: attr(data-notification);
+            font-size: 8px;
+            color: white;
+            position: absolute;
+            @include flex(center, center);
+            top: -1px;
+            right: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: red;
+          }
+
+          &__icon {
+            font-size: 14px;
+          }
+        }
+
+        &__user {
+          @include flex(center, center);
+
+          &__name {
+            text-transform: capitalize;
+            margin-right: 10px;
+          }
+
+          &__avatar {
+            width: 65px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: #1f94b7;
+          }
+        }
+      }
+
+      &__noauth {
+        display: none;
+        width: 190px;
+        height: 50px;
+
+        & > .pure-css-nav {
+          & > nav {
+            transition: 0.2s all 0.2s;
+            & > ul {
+              & > li {
+                background-color: #f1b640;
+                border-radius: 25px;
+                width: 190px;
+                height: 50px;
+                z-index: 1;
+
+                & > a {
+                  box-shadow: 2px 3px 5px 3px #1f1f1f1f;
+                  z-index: 1;
+                }
+
+                ul {
+                  transform: translateY(-50px);
+                  z-index: -1;
+                  border-radius: 25px;
+                  width: 100%;
+                  overflow: hidden;
+                  background-color: #f1b640;
+                  z-index: -1;
+
+                  li {
+                    background-color: #f1b640;
+
+                    a {
+                      justify-content: center;
+                    }
+                  }
+
+                  li:nth-child(1) {
+                    padding-top: 60px;
+                  }
+                  li:nth-child(2) {
+                    padding-bottom: 10px;
+                  }
+                }
+
+                &:hover {
+                  background-color: #f1b640;
+                  border-radius: 25px;
+                }
+
+                a:first-child:nth-last-child(2) {
+                  justify-content: center;
+                  background-color: #f1b640;
+                  border-radius: 25px;
+                }
+
+                a:first-child:nth-last-child(2)::after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  @include flex(center, center);
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 100%;
+    right: 25px;
+    top: 28px;
+  }
+  .menu-bg {
+    @extend .menu;
+    background: #663399;
+    pointer-events: none;
+    transition: 0.3s;
+    right: 50px;
+    top: 50px;
+    transform: translate3d(50%, -50%, 0);
+    transform-origin: center center;
+    &.fs {
+      transform: translate3d(50%, -50%, 0);
+      width: 600vw;
+      height: 600vw;
+    }
+  }
+  .menu-burger {
+    @extend .menu;
+    color: white;
+    -webkit-user-select: none;
+    cursor: pointer;
+    transition: 0.4s;
+    transform-origin: center;
+    &.fs {
+      transform: rotate(-180deg) translateY(10px);
+      z-index: 1;
+    }
+  }
+  .menu-items {
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translateY(-200%);
+    pointer-events: none;
+    div {
+      transition: 1s;
+      opacity: 0;
+      margin-top: 0px;
+    }
+    &.fs {
+      transform: translateY(0);
+      pointer-events: auto;
+      opacity: 1;
+      div {
+        opacity: 1;
+      }
+    }
+  }
+
+  .travelomnia__header__container {
+    @include flex(center, center, column);
+
+    &__logo {
+      order: 1;
+      margin-bottom: 60px;
+    }
+    &__nav.pure-css-nav {
+      order: 3;
+      
+      & > nav > ul > li {
+        a {
+          color: white;
+        }
+
+        &:hover {
+          & > ul {
+            // margin-top: 0;
+            // margin-left: -5px;
+            margin-top: 44px;
+            margin-left: -199px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__account {
+      order: 2;
+      margin-bottom: 60px;
+
+      &__language {
+        color: white;
+      }
+      &__auth {
+        margin-top: 0 !important;
+        &__notify {
+          &::after {
+            top: 20px;
+            right: -5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-bg,
+  .menu-burger {
+    display: none;
+  }
+}

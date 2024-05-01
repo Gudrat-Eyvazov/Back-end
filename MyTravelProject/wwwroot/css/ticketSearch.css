@@ -1,0 +1,165 @@
+
+    /* Related tours section */
+.card-body {
+  padding: 0.8rem;
+}
+.card div{
+  overflow: hidden;
+}
+.card img{
+  transition: all 0.5s ease-in-out;
+}
+.card img:hover{
+ transform: scale(1.1);
+}
+.related .card{
+  width: 100% !important;
+  margin-top: 2rem;
+}
+.related .section-head{
+  margin: 2rem 0 0 0 !important;
+}
+.related .card-text{
+  color: #F1B640;
+    margin-top: -3%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.related .card-title{
+  font-weight: bold;
+  color: #343434;
+}
+.size-card img{
+    height: 14rem;
+}
+
+.section-head{
+      font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+    color: #4A4141;
+}
+.img-fluid {
+    width: 100%;
+    height: 100%;
+}
+.post-wrap button{
+    padding: 0.6rem 2rem;
+    border-radius: 26px;
+    background-color: #F1B640;
+    outline: none;
+    color: black;
+    border: 1px solid #F1B640;
+    font-weight: bold;
+}
+.card_text{
+    padding: 1rem;
+}
+@media only screen and (max-width: 1040px)
+{
+    .size-card img{
+    height: 11.7rem;
+}
+}
+
+@media only screen and (max-width: 768px)
+{
+    .size-card img{
+    height: unset !important;
+}
+.card_text {
+    padding: 2rem;
+}
+.post-wrap button{
+    width: 100%;
+}
+.txt{
+  margin: 0rem !important;
+  text-align: center;
+}
+.post-wrap__content {
+    padding: 0 2rem !important;
+}
+.view h1 {
+    font-size: 3rem;
+}
+}
+
+.post-wrap {
+    margin-bottom: 30px;
+}
+
+.post-wrap__img,
+.post-wrap__img img {
+    height: 100%;
+}
+
+.post-wrap__img img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.post-wrap__content {
+    padding: 8px;
+}
+
+.post-wrap__title {
+    margin-bottom: 15px;
+}
+.post-wrap__title div{
+margin-top: 1rem;
+}
+.post-wrap .calend{
+  color: #1F94B7;
+}
+
+.post-wrap__title i {
+    margin-right: 3px;
+}
+
+.post-wrap__desc {
+    color: #666666;
+    font-weight: 300;
+}
+
+.post-wrap__right {
+    color: #000;
+}
+
+.post-wrap__right p:first-child {
+  margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.post-wrap__right .price {
+    font-size: 40px;
+    color: #1F94B7;
+}
+
+.post-wrap__right .btn {
+    color: #fff;
+    height: 42px;
+    border-radius: 15px;
+    background: #1F94B7;
+}
+.txt{
+  margin: 5rem;
+}
+.txt h3{
+ color: #F1B640;
+}
+.txt p{
+  font-weight: 600;
+}
+
+.related center button {
+    padding: 0.6rem 4rem;
+    border-radius: 26px;
+    background-color: #F1B640;
+    outline: none;
+    color: black;
+    border: 1px solid #F1B640;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

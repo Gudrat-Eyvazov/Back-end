@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelomnia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pure-css-navigation.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="travelomnia__header">
+        <img class="logo-nav" alt="travelomnia-logo" src="logo.png">
+        <div class="menu-bg"></div>
+        <div class="menu-burger">☰</div>
+        <div class="travelomnia__header__container menu-items">
+            <img class="travelomnia__header__container__logo" alt="travelomnia-logo" src="logo.png">
+            <div class="travelomnia__header__container__nav pure-css-nav mb-5">
+                <nav>
+                    <ul>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="">Flights</a></li>
+                        <li><a href="">Transfers</a></li>
+                        <li><a href="">Packages</a></li>
+                        <li>
+                            <a href="">Services</a>
+                            <ul>
+                                <li><a href="">Travel Insurance</a></li>
+                                <li><a href="">Car rental</a></li>
+                                <li><a href="">Visa support</a></li>
+                                <li><a href="">Events</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="travelomnia__header__container__account">
+                <select name="language" class="travelomnia__header__container__account__language">
+                    <option value="az" class="travelomnia__header__container__account__language__option">AZ</option>
+                    <option value="en" class="travelomnia__header__container__account__language__option">En</option>
+                    <option value="ru" class="travelomnia__header__container__account__language__option">Ru</option>
+                </select>
+
+                <div class="travelomnia__header__container__account__auth">
+                    <span class="travelomnia__header__container__account__auth__notify" data-notification="0">
+                        <i class="travelomnia__header__container__account__auth__notify__icon far fa-bell"></i>
+                    </span>
+                    <span class="travelomnia__header__container__account__auth__user">
+                        <span class="travelomnia__header__container__account__auth__user__name">Asiman</span>
+                        <img src="logo.png" alt="avatar"
+                            class="travelomnia__header__container__account__auth__user__avatar">
+                    </span>
+                </div>
+                <div class="travelomnia__header__container__account__noauth">
+                    <div class="pure-css-nav mb-5">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">Account</a>
+                                    <ul>
+                                        <li><a href="">Sign in</a></li>
+                                        <li><a href="">Sign up</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        main content
+    </main>
+
+    <script>
+        const nav = document.querySelector('.travelomnia__header__container > .pure-css-nav');
+        window.addEventListener('resize', (e) => {
+            if (e.target.innerWidth < 1024) {
+                nav.classList.add('nav-vertical');
+            } else {
+                nav.classList.remove('nav-vertical');
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.innerWidth < 1024) {
+                nav.classList.add('nav-vertical');
+            } else {
+                nav.classList.remove('nav-vertical');
+            }
+        });
+
+        const burger = document.querySelector('.menu-burger');
+        const burgerNItems = document.querySelectorAll('.menu-burger');
+        burgerNItems.forEach(element => {
+            element.addEventListener('click', () => {
+                document.querySelectorAll('.menu-bg, .menu-items, .menu-burger').forEach(elem => {
+                    elem.classList.toggle('fs');
+                });
+                burger.textContent === '☰' ? burger.textContent = '✕' : burger.textContent = '☰';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

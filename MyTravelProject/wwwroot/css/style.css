@@ -1,0 +1,3505 @@
+.padt-7{
+  padding-top: 7rem !important;
+}
+
+
+/* Where do you want to go? */
+.view{
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center;
+  position: relative;
+  height: 600px;  
+}
+
+.view:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+.view button{
+  padding: 0.6rem 6rem;
+  border-radius: 26px;
+  background-color: #F1B640;
+  outline: none;
+  color: black;
+  border: 1px solid #F1B640;
+  font-weight: bold;
+  margin-top: -2%;
+}
+.view h1{
+color: white;
+}
+
+.ticketType{
+  margin-top: 15%;
+}
+.view ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+/* for icon in input  in Where do you want to go*/
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.inputWithIcon span i {
+  margin-right: 5px;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon input[type="text"]:focus + span, .inputWithIcon input[type="text"]:not(:placeholder-shown) + span {
+  display: none;
+}
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+/* Popular Dest section */
+.section-head{
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    color: #4A4141;
+}
+.center a{
+    padding: 0.6rem 4rem;
+    border-radius: 26px;
+    outline: none;
+    color: black;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+.popular .col-md-6{
+  margin-bottom: 2rem;
+}
+.cityBox{
+  position: relative;
+  height: 100%;
+}
+.cityBox img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  pointer-events: all;
+  filter: brightness(0.7);
+  transform: translateY(0);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+
+}
+.cityBox>img:hover{
+  filter: brightness(0.9);
+  transform: translateY(-10px);
+}
+.cityBox h3{
+  position: absolute;
+  bottom: 2%;
+  left: 8%;
+  color: white;
+  z-index: 20;
+  font-size: 24px;
+}
+
+
+/* collective section */
+.collective{
+  min-height: 460px;
+}
+.collective img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.4)
+}
+.collective .col-md-6{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.infoStatic{
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  z-index: 3 ;
+  font-weight: 600;
+}
+.content h3{
+  margin-bottom: 1rem;
+}
+.content p{
+  margin-bottom: 0.5rem;
+}
+/* collective section end */
+
+
+/* Related tours section */
+.related .card-body {
+  padding: 0.8rem;
+}
+.related .card div{
+  overflow: hidden;
+}
+.related .card img{
+  transition: all 0.5s ease-in-out;
+}
+.related .card img:hover{
+ transform: scale(1.1);
+}
+.related .card{
+  width: 100% !important;
+  margin-top: 2rem;
+}
+
+.related .card-text{
+  color: #999999;
+    margin-top: -3%;
+    font-size: 14px;
+}
+.related .card-title{
+  font-weight: bold !important;
+  color: #343434;
+}
+
+.staredRating{
+  display: flex;
+}
+.staredRating p{
+color: #343434;
+font-weight: 600;
+}
+
+.staredRating p:last-child{
+  margin-left: 7%;
+}
+.rating {
+  font-size: 1.5rem;
+  margin-top: -8px;
+  margin-right: 5%;
+}
+.rating a,
+.rating label {
+  float:right;
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color .4s;
+  -moz-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
+}
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+  color: orange;
+  cursor: pointer;
+}
+
+
+/* about  section start*/
+.about{
+  margin-bottom: 3rem;
+}
+.bgimgBox{
+ height: 500px;
+ margin-bottom: 2rem;
+}
+.bgimgBox img{
+  width: 100%;
+  height: 100%;
+}
+.secondContainer {
+  text-align: center;
+  margin: auto;
+}
+.about form div{
+  margin-bottom: 1.5rem;
+}
+.about form button{
+  text-align: left;
+  display: block;
+  padding: 0.6rem 2rem;
+  border-radius: 26px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+.secondContainer h2{
+  font-weight: 700;
+    margin: 2rem 0;
+    color: #000000;
+}
+
+
+/* media */
+/* @media (max-width: 768px) {
+.view h1{
+  margin-top: 3rem;
+}
+} */
+@media (max-width: 420px) {
+  .md-form{
+    width: 100% !important;
+  }
+  .md-form button{
+    width: 100% ;
+  }
+  .secondContainer {
+    width: 100% !important ;
+}
+  .popular h1{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .view h1{
+    font-size: 2.6rem;
+    margin-top: 25% !important;
+  }
+  .form-inline button {
+    margin: 1rem 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .rating  .card-body {
+    padding: 0.6rem;
+}
+.rating {
+  margin-right: 4% !important;
+}
+.view h1 {
+  margin-top: 20% !important;
+}
+}
+
+@media (max-width: 320px) {
+  .rating {
+    margin-right: 10px !important;
+}
+.staredRating p:last-child {
+  margin-left: 10 px;
+}
+.view h1 {
+  font-size: 2.4rem !important;
+  margin-top: 27% !important;
+}
+}
+
+@media (max-width: 1024px) {
+  .inputWithIcon{
+    margin-bottom: 2rem;
+  }
+  .secondContainer {
+    width: 80%;
+  }
+  .bgimgBox{
+    height: unset !important;
+   }
+   .collective {
+    min-height: unset !important;
+}
+ 
+
+.lang-item{
+margin-left: 0;
+}
+.left-current {
+  margin-left: 0%;
+}
+header .navbar-nav li {
+  margin-right: 0;
+}
+
+}
+@media (min-width: 1111px) {
+    .secondContainer {
+    width: 60%;
+  }
+}
+
+ /*============================= Ticket reservation html ===========================*/
+
+.ticket-reservation__header {
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.ticket-reservation__header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+
+.ticket-reservation__header-content {
+  flex: 1;
+}
+
+.icon-c {
+  display: inline-block;
+  background-size: cover !important;
+}
+
+.icon-transportation-up {
+  width: 21px;
+  height: 14px;
+  background: url("../img/transportation@2x.png") no-repeat;
+}
+
+.icon-user {
+  width: 16px;
+  height: 18px;
+  background: url("../img/user.png") no-repeat;
+}
+
+.ticket-reservation__header-item {
+  color: #fff;
+}
+
+.ticket-reservation__header-item-icon {
+  margin-bottom: 15px;
+}
+
+.ticket-reservation__header-item h3 {
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+.ticket-reservation__header-passangers div:first-child {
+  margin-right: 30px;
+}
+
+@media (min-width: 1200px){
+    .ticket-reservation__header-content .container {
+     max-width: 1020px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ticket-reservation__header {
+        padding-top: 115px;
+        text-align: center;
+    }
+
+    .ticket-reservation__header-item {
+        margin-bottom: 15px;
+    }
+
+    .ticket-reservation__header-passangers {
+        justify-content: center;
+    }
+
+    .ticket-reservation__header-item-icon {
+        margin-bottom: 5px;
+    }
+}
+
+
+/*Ticket Reservation content*/
+
+.ticket-reservation-inner {
+    padding: 80px 0;
+}
+
+@media (min-width: 1200px){
+    .ticket-reservation-inner .container {
+     max-width: 980px;
+    }
+}
+
+.ticket-reservation__slider-area {
+    margin-bottom: 55px;
+}
+
+.ticket-reservation__slider {
+    margin-bottom: 30px;
+}
+
+.ticket-reservation__slider-heading {
+    color: #000;
+    padding-left: 62px;
+    margin-bottom: 15px;
+}
+
+.ticket-reservation__slider-heading a {
+    color: #F1B640;
+}
+
+.ticket-reservation__slider-heading a i {
+    font-size: 9px;
+}
+
+.ticket-reservation__slider-wrap {
+    padding: 0 55px;
+}
+
+.ticket-reservation__slider-wrap .slick-list {
+    margin: 0 -7px;
+}
+
+.ticket-reservation__slider-wrap .slick-slide {
+    margin: 0 7px;
+}
+
+.ticket-reservation__slider-item {
+    color: #000;
+    min-height: 160px;
+    padding: 15px;
+    border-radius: 2px;
+    border: 2px solid #EAEAEA;
+    position: relative;
+    cursor: pointer;
+}
+
+.ticket-reservation__slider-item.active {
+    color: #fff;
+    background: #1F94B7;
+}
+
+.ticket-reservation__slider-item input[type=radio]{
+    display: none;
+}
+
+.ticket-reservation__slider-item-bottom {
+    position: absolute;
+    bottom: 15px;
+}
+
+.ticket-reservation__slider-item small {
+    font-size: 12px;
+}
+
+.ticket-reservation__slider-wrap button.slick-next,
+.ticket-reservation__slider-wrap button.slick-prev {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: #F8F8F8;
+    outline: none;
+    border: none;
+}
+
+.ticket-reservation__slider-wrap button.slick-next {
+    right: 0;
+}
+
+.ticket-reservation__slider-wrap button.slick-prev {
+    left: 0;
+}
+
+/*Ticket reservation list*/
+
+.ticket-reservation-list__heading {
+    margin-bottom: 10px;
+}
+
+.ticket-reservation-list__heading span,
+.ticket-reservation-list__heading label {
+    color: #AEAEAE;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.ticket-reservation-list__heading label {
+    min-width: 60px;
+    margin-bottom: 0;
+}
+
+.ticket-reservation-list__sort {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-reservation-list__sort .form-control {
+    border: 2px solid #D8D8D8;
+}
+
+.ticket-reservation-list__item {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #1F94B7;
+}
+
+.ticket-reservation-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.ticket-reservation-list__item-wrap {
+    padding: 27px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #EAEAEA;
+}
+
+.ticket-reservation-list__item-logo img {
+    max-width: 145px;
+}
+
+.ticket-reservation-list__item-dest span {
+  color: #777777;
+  font-size: 12px;
+}
+
+.ticket-reservation-list__item-dest h2 {
+  color: #000;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.ticket-reservation-list__item-time {
+  text-align: center;
+}
+
+.ticket-reservation-list__item-time span {
+  color: #1F94B7;
+  font-size: 12px;
+}
+
+.ticket-reservation-list__item-time span.text-green {
+  color: #ADED5A;
+}
+
+.ticket-reservation-list__item-line {
+  width: 92px;
+  height: 1px;
+  background: #1F94B7;
+  position: relative;
+}
+
+.ticket-reservation-list__item-line:before,
+.ticket-reservation-list__item-line:after {
+  content: '';
+  position: absolute;
+  width: 21px;
+  background-size: cover !important;
+}
+
+.ticket-reservation-list__item-line:before {
+  top: -6px;
+  left: -30px;
+  height: 14px;
+  background: url("../img/transportation@2x.png") no-repeat;
+}
+
+.ticket-reservation-list__item-line:after {
+  top: -10px;
+  right: -30px;
+  height: 22px;
+  background: url("../img/transportation-down.png") no-repeat;
+}
+
+.ticket-reservation-list__right {
+    height: 100%;
+    position: relative;
+    padding: 30px;
+}
+
+.ticket-reservation-list__right ul li {
+    color: #777777;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+ .ticket-reservation-list__right ul li span {
+     color: #444444;
+     font-size: 16px;
+ }
+
+ .ticket-reservation-list__right ul li span.price {
+     font-size: 30px;
+ }
+
+ .ticket-reservation-list__right .btn {
+     color: #323232;
+     height: 50px;
+     border-radius: 25px;
+     background: #F1B640;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+
+.ticket-reservation-list__item--border-l:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -15px;
+     bottom: 0;
+     border-left: 1px dashed #EAEAEA;
+}
+
+@media (min-width: 992px) {
+    .ticket-reservation-list__item:after,
+    .ticket-reservation-list__right:before,
+    .ticket-reservation-list__right:after {
+        content: '';
+        border: solid #1F94B7;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 4px;
+        position: absolute;
+        background: #fff;
+    }
+ 
+
+    .ticket-reservation-list__item:after {
+        top: 50%;
+        left: -4px;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .ticket-reservation-list__right:before {
+        top: -5px;
+        left: -34px;
+        transform: rotate(45deg);
+    }
+
+    .ticket-reservation-list__right:after {
+        bottom: -5px;
+        left: -34px;
+        transform: rotate(-136deg);
+    }
+
+    .ticket-reservation-list__item-wrap:last-child {
+        border-bottom: none;
+    }
+
+    .ticket-reservation-list__right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .ticket-reservation-list__item-wrap {
+        flex-direction: column;
+    }
+
+    .ticket-reservation-list__item-wrap > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+ 
+.navbar-expand-lg{
+  display: none;
+}
+.mobile-navbar{
+  display: block !important;
+}
+}
+
+.ticket-reservation-list__item .card-body{
+  background-color: #F1F2F8;
+}
+.ticket-reservation-list__item .info-div{
+  width: 80%;
+    margin: auto;
+}
+
+.ticket-reservation-list__item .info-div img{
+  width: 23%;
+}
+
+.info-div .flexible{
+display: flex;
+margin-top: 2rem;
+}
+.info-div .flexible .left{
+  margin-right: -70px;
+}
+.left span, .right span{
+  font-weight: bold;
+}
+
+.bg-whit{
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    color: red;
+}
+.bg-whit span:nth-child(1){
+  margin: 0 2.5rem;
+}
+.arrive-info{
+  margin-top: 2rem;
+}
+.arrive-info p{
+  display: inline !important;
+}
+.arrive-info .border{
+  border: 1px solid #a5a5a5 !important;
+  margin: 0 20px;
+}
+.arrive-info p span{
+  font-weight: bold;
+}
+/*============================= Ticket reservation html  end===========================*/
+
+
+/*============================= Hotel reservation html start ===========================*/
+
+.hotel-details__btns-top button{
+  background: #F6F9FF !important;
+}
+.hotel-details__btns-top button:hover{
+  color: black !important;
+}
+.hotel-reservation-warapper{
+  padding-top: 7rem;
+}
+
+.hotel-reservation__title h1 {
+  color: #000;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.hotel-reservation-gallery img {
+  border-radius: 10px;
+}
+
+.hotel-reservation-gallery__nav {
+  margin-top: 10px;
+}
+
+.hotel-reservation-gallery__nav .slick-list {
+  margin: 0 -5px;
+}
+
+.hotel-reservation-gallery__nav .slick-slide {
+  margin: 0 5px;
+}
+
+.hotel-reservation-gallery__nav-item {
+  position: relative;
+}
+
+.hotel-reservation-gallery__nav-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(0,0,0,.3);
+}
+
+.hotel-reservation-gallery__nav-item-count {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #fff;
+  font-size: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+.hotel-details .nav-pills .nav-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.hotel-details .nav-pills .nav-item a {
+  color: #343434;
+  font-size: 20px;
+}
+
+.hotel-details .tab-content span {
+  color: #343434;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hotel-details__desc {
+  color: #666666;
+  margin: 15px 0;
+}
+
+.hotel-details__desc p {
+  font-size: 19px;
+}
+
+.hotel-details__desc span {
+  margin-right: 15px;
+  font-size: 20px !important;
+}
+
+.hotel-details-show-more {
+  color: #030717;
+  font-size: 20px;
+}
+
+.hotel-details__price-area {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.hotel-details__rate {
+  color: #24A958;
+}
+
+.hotel-details__rate i {
+  color: #F1B640;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.hotel-details__price {
+  color: #343434;
+  margin: 20px 0 10px;
+}
+
+.hotel-details__price span:not(:last-child) {
+  margin-right: 12px;
+}
+
+.hotel-price-old {
+  text-decoration: line-through;
+}
+
+.hotel-price-new {
+  font-size: 30px;
+}
+
+.hotel-details__price-area p {
+  color: #555555;
+}
+
+.btn-light-blue {
+  height: 40px;
+  color: #030717;
+  border-radius: 20px;
+  padding: .375rem 1.6rem;
+  background: #F6F9FF;
+  font-weight: bold;
+}
+
+.hotel-details__btns .btn-book {
+  height: 50px;
+  min-width: 300px;
+  color: #030717;
+  border-radius: 25px;
+  background: #F1B640;
+}
+
+.hotel-details__btns .btn-light-blue {
+  margin-bottom: 10px;
+}
+
+
+.booking-info{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) !important;
+  padding: 2rem;
+  margin: 4rem 0;
+  background: #F8F9FC;
+  border-radius: 10px;
+}
+.bubble::before
+{
+  content: '';
+    position: absolute;
+    background-color: #D8D8D8;
+    width: 1px;
+    height: 5.2rem;
+    bottom: 0;
+    right: 0;
+    top: -30px;
+}
+
+.bubble .fa-search{
+  position: absolute;
+    right: 2rem;
+}
+
+.lowest_div{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    margin-right: 1px;
+}
+.lowest_div h4{
+  font-size: 19px;
+    color: #9292A3;
+    margin-bottom: 1rem;
+}
+.lowest_div ul li{
+  list-style: circle;
+  font-weight: bold;
+  color: #675c5c;
+  margin-left: -25px;
+}
+
+.lowest_div .price{
+  color: #343434;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.lowest_div span{
+  font-size: 15px;
+  color: #E2E2E2;
+}
+.lowest_div button{
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+@media(max-width:1024px)
+{
+  .hotel-details__desc p {
+    font-size: 15px;
+}
+.lowest_div button {
+  width: 100%;
+}
+.lowest_div {
+  padding: 1rem 1rem;
+}
+}
+@media (min-width: 768px){
+
+  .hotel-details__price-area,
+  .hotel-details__btns {
+    text-align: left;
+  }
+
+  .hotel-details__price-area {
+    margin-top: 0;
+  }
+
+}
+@media(max-width:768px){
+  .hotel-details{
+    margin-top: 2rem;
+  }
+  .bubble::before
+  {
+    content: unset;
+  }
+  .bubble .fa-search {
+    right: 1rem;
+}
+.lowest_div {
+  padding: 1rem 2rem;
+}
+}
+@media(max-width: 550px){
+  .bubble{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 1rem;
+
+  }
+}
+/*============================= Hotel reservation html end ===========================*/
+
+
+/*============================= Hotel destinations html start ===========================*/
+
+.client-inners img {
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.client-inners {
+  border: 1px solid #ccc;
+  height: 85px;
+  text-align: center;
+  padding: 8px;
+}
+
+.destpop .card {
+box-shadow: 0  4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+margin-bottom: 3rem;
+}
+
+.destpop .card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.destpop .txtcard{
+  padding: 5px 1rem;
+}
+.destpop .txtcard h4{
+  font-size: 24px;
+  font-weight: 600;
+  color: #1F94B7;
+}
+.destpop .txtcard p{
+  color: #F1B640;
+  font-weight: 600;
+}
+.controls-top a{
+  position: absolute;
+  top: 20%;
+}
+.controls-top a:first-child{
+  left: 0;
+}
+.controls-top a:nth-child(2){
+  right: 0;
+}
+
+
+/*============================= Hotel view html start(baxildi)===========================*/
+.hotel-page {
+  margin-bottom: 80px;
+  padding-top: 9rem;
+}
+
+.hotel-info{
+  margin-bottom: 1rem;
+}
+.hotel-info h2{
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.info-nav {
+  display: inline-block;
+  margin: 0 0px 10px 0;
+}
+
+.info-nav button {
+  min-width: 77px;
+  height: 42px;
+  background: #fff;
+  border: 1px solid rgb(224, 216, 216);
+  border-radius: 12px;
+  padding: 0 15px;
+  outline: none;
+}
+
+.view {
+  background-size: 100% 100%;
+  min-height: 180px;
+}
+
+.post-wrap {
+  margin-bottom: 30px;
+}
+
+.post-wrap__img,
+.post-wrap__img img {
+  height: 100%;
+}
+
+.post-wrap__img img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.post-wrap__content {
+  padding: 25px;
+}
+
+.post-wrap__title {
+  margin-bottom: 15px;
+}
+
+.post-wrap__title i {
+  margin-right: 3px;
+}
+
+.post-wrap__desc {
+  color: #666666;
+  font-weight: 300;
+}
+
+.post-wrap__right {
+  color: #000;
+}
+
+.post-wrap__right .rating {
+  color: #F1B640;
+}
+
+.post-wrap__right .price {
+  font-size: 20px;
+}
+
+.post-wrap__right .btn {
+  color: #fff;
+  height: 42px;
+  border-radius: 15px;
+  background: #1F94B7;
+}
+
+.hotel-page .pagination {
+  margin-top: 50px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-item.active .page-link {
+  border-radius: 50%;
+  background: #1F94B7;
+}
+
+.pagination .page-link {
+  color: #000;
+  border: none;
+  padding: .5rem .85rem;
+  background: transparent;
+}
+
+.pagination .page-next {
+  border-radius: 50% !important;
+  background: #F1B640;
+}
+.hotel-select-info{
+  background: #F1F2F8;
+  border: 1px solid #F1F2F8;
+  padding: 1rem;
+} 
+.hotel-select-info .form-check{
+ margin-top: 0.5rem;
+}
+.hotel-select-info .form-check label{
+  font-size: 15px;
+}
+.rating_group .rating{
+  color: #F1B640;
+}
+.hotel-select-info h5{
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+@media (min-width: 992px){
+  .post-wrap__content {
+      padding-left: 0;
+  }
+
+  .post-wrap__right {
+      text-align: right;
+  }
+}
+
+@media screen and (max-width: 768px){
+#post .btn{
+  position: relative;
+  margin-bottom: 10px;
+  top: 0;
+  left: 0;
+  transform: translate(0,0);
+}
+.col-reverse{
+  flex-direction: column-reverse;
+}
+.hotel-page {
+  margin-top: 0rem;
+}
+
+}
+
+/*============================= Hotel view html end ===========================*/
+
+
+/*============================= Ofline Request html start(baxildi) ===========================*/
+
+.offline-request{
+  background-image: url(../img/bg-imgs.png);
+  padding-top: 8rem;
+  margin-bottom: 4rem;
+  background-repeat: no-repeat;
+}
+
+.offline-request h1{
+  text-align: center;
+  margin-bottom: 2rem ;
+}
+
+
+.offline-request .request-form{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    padding: 2rem 5rem;
+}
+.offline-request .request-form label{
+  font-weight: bold;
+}
+.offline-request .request-form textarea{
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 2rem ;
+  resize: none;
+  border:1px solid #ced4da;
+  border-radius: 10px;
+}
+
+.request-form button{
+  width: 50%;
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .offline-request .request-form {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+
+
+/*============================= Ofline Request html end ===========================*/
+
+
+/*============================= Tab Panel Section ===========================*/
+/* tab panel nav */
+.main_div {
+  display: flex;
+  justify-content: center;
+  padding: 8rem 1rem 0;
+    margin-bottom: 4rem;
+}
+
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #1F94B7;
+}
+
+.nav-pills {
+  position: relative;
+  justify-content: center;
+}
+
+.nav-pills::after {
+  content: "";
+  width: 590px;
+  height: 2px;
+  background: #1F94B7;
+  position: absolute;
+  bottom: 0;
+
+}
+.tab_panel_section .nav-item a {
+  color: #1F94B7;
+  font-weight: bold;
+}
+
+/* tab content */
+
+
+.tab-content .wrapper {
+  padding: 2rem 0;
+}
+
+form .input_wrapper {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.tab_panel_section input,
+.tab_panel_section  select {
+  height: 45px;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  padding: 5px 1rem;
+  width: 100%;
+}
+
+.input_wrapper label {
+  color: #777777;
+  font-size: 15px;
+  padding: 0 1rem;
+}
+
+.input_wrapper label span {
+  color: red;
+}
+
+.input_wrapper .disabled_input {
+  background-color: #F1F2F8;
+}
+
+/* orders wrapper */
+.orders_wrapper {
+  font-family: helvetica;
+  font-weight: normal;
+  margin: 0 auto;
+}
+
+.orders_wrapper  table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #FCFCFD;
+}
+
+.orders_wrapper  table thead tr {
+  height: 65px;
+  box-shadow: 0px 0px 14px -3px #bbbbbb;
+}
+
+.orders_wrapper  table td,
+.orders_wrapper  table th {
+  vertical-align: middle;
+  padding: 0 15px;
+}
+
+tbody td input {
+  height: 40px;
+  border-color: #979797;
+  border-radius: 5rem;
+  padding: 5px 1rem;
+  width: 8rem;
+  text-align: center;
+  background-color: #FCFCFD;
+  margin: 25px 0;
+}
+
+tbody td .travelers {
+  width: 6rem;
+}
+
+td input:focus {
+  outline: none;
+}
+
+table th {
+  color: #777777;
+  font-weight: bold;
+}
+
+table td {
+  color: #777777;
+}
+
+table .header-level {
+  cursor: pointer;
+}
+
+table>tbody {
+  border-bottom: 1px solid #ECECEC;
+}
+
+table>tbody:last-child {
+  border-bottom: none;
+}
+
+table>tbody>tr>td {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+table>tbody .header-level td {
+  height: 40px;
+}
+
+.header-level td .icon {
+  margin-right: 15px;
+}
+
+.header-level .icon img {
+  width: 25px;
+}
+
+
+table>tbody .sub-level td {
+  height: auto;
+  overflow: hidden;
+}
+
+table .sub-level table {
+  text-align: left;
+  background-color: white;
+}
+
+.sub-level td {
+  background-color: white;
+}
+
+.sub-level tbody td {
+  padding: 7px 15px;
+}
+
+.sub-level {
+  box-shadow: 0 5px 15px #EAEAEA;
+}
+
+.sub-level td .text_header {
+  font-size: 15px;
+  color: #AEAEAE;
+}
+
+.sub-level td .text {
+  color: #222222;
+}
+
+.sub-level tbody span img {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  height: 16px;
+}
+
+/* passport wrapper */
+.passport_wrapper {
+  /* width: 1206px; */
+  margin: 0 3rem;
+}
+
+.passport_wrapper .passport_information {
+  margin-bottom: 2rem;
+}
+
+.passport_wrapper .document_property {
+  display: flex;
+  justify-content: center;
+}
+
+.passport_wrapper .passport_information .svg_wrapper {
+  padding: 0 15px;
+}
+
+.passport_wrapper .passport_information svg {
+  padding-bottom: 5px;
+}
+
+.collapse_header {
+  padding: 17px 30px;
+  border: 1px solid #1F94B7;
+}
+
+.collapse_header h5 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.passport_wrapper .collapse_content {
+  background-color: #F1F2F8;
+  padding: 30px;
+}
+
+.passport_information .passport_input {
+  margin-bottom: 1rem;
+  color: #686980;
+}
+
+.passport_wrapper .user_container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.passport_wrapper .user_checkbox {
+  padding: 30px 15px 30px 0;
+  height: fit-content;
+}
+
+.passport_wrapper .user_checkbox input {
+  opacity: 1;
+  width: 22px;
+  pointer-events: all;
+  position: static;
+}
+
+.passport_wrapper .user_passport {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.passport_wrapper .user_passport {
+  width: calc(100% - 37px);
+  display: grid;
+  grid-template:
+    "a b c d d e"1fr "f g h h . ."1fr / 2fr 2fr 1fr 1fr 1fr 2fr;
+}
+
+.passport_wrapper .item1 {
+  grid-area: a;
+}
+
+.passport_wrapper .item2 {
+  grid-area: b;
+}
+
+.passport_wrapper .item3 {
+  grid-area: c;
+}
+
+.passport_wrapper .item4 {
+  grid-area: d;
+}
+
+.passport_wrapper .item5 {
+  grid-area: e;
+}
+
+.passport_wrapper .item6 {
+  grid-area: f;
+}
+
+.passport_wrapper .item7 {
+  grid-area: g;
+}
+
+.passport_wrapper .item8 {
+  grid-area: h;
+}
+
+.passport_wrapper .user_information {
+  margin-bottom: 2rem;
+  padding: 0 10px;
+}
+
+.passport_wrapper .user_information input,
+.passport_wrapper .user_information select {
+  border: 1px solid #F1B640;
+}
+
+.passport_wrapper .user_information label {
+  color: #AEAEAE;
+}
+
+.passport_wrapper .user_information .date_input {
+  display: flex;
+}
+
+.passport_wrapper .user_information .date_input input {
+  margin-right: 5px;
+  text-align: center;
+}
+
+.passport_information .passport_input input,
+.passport_information .passport_input select {
+  height: 50px;
+  background-color: white;
+  border-radius: 2px;
+  border-color: transparent;
+  color: #686980;
+}
+
+.passport_input.checkbox input {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  position: static;
+  pointer-events: all;
+}
+
+.passport_input.checkbox label {
+  font-size: 14px;
+}
+
+.passport_input.pt {
+  padding-top: 66px;
+}
+
+.passport_information .contact_info {
+  position: relative;
+}
+
+.passport_information .contact_info span {
+  position: absolute;
+  left: 1rem;
+  top: 15px;
+  z-index: 5;
+}
+
+.passport_information h2 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+/* remove input arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+/* dropdown input in telephone number*/
+.dropdown__switch:checked+.dropdown__options-filter .dropdown__select {
+  transform: scaleY(1);
+}
+
+.dropdown__switch:checked+.dropdown__options-filter .dropdown__filter:after {
+  transform: rotate(-135deg);
+}
+
+.dropdown__options-filter {
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown__filter {
+  display: flex;
+  position: relative;
+  padding: 15px 4rem;
+  color: #595959;
+  font-size: 14px;
+  transition: .3s;
+  background-color: #f1f2f8;
+  border-radius: 2px;
+  border-color: transparent;
+}
+
+.dropdown__filter:focus {
+  outline: none;
+}
+
+.dropdown__filter::after {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-45%);
+  transition: .2s ease-in-out;
+  border-right: 2px solid #595959;
+  border-bottom: 2px solid #595959;
+  content: "";
+}
+
+.dropdown__select {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  transition: .2s ease-in-out;
+  font-weight: 300;
+  transform: scaleY(0);
+  transform-origin: top;
+  overflow: hidden;
+  z-index: 555;
+}
+
+.dropdown__select-option {
+  padding: 10px 20px;
+  transition: .3s;
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.dropdown__select-option:last-of-type {
+  border-bottom: 0;
+}
+
+.dropdown__select-option:hover {
+  background-color: #f9f9f9;
+}
+
+/* settings wrapper */
+.settings_wrapper .change_pw {
+  position: relative;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.settings_wrapper .change_pw span {
+  position: absolute;
+  right: 1rem;
+}
+
+.settings_wrapper .change_pw a {
+  color: black !important;
+  display: block;
+}
+
+/* info wrapper */
+.info_wrapper form {
+  display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+  .passport_wrapper .document_property {
+    display: block;
+    text-align: center;
+  }
+  .passport_wrapper .collapse_content {
+    padding: 30px 0; 
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-pills::after {
+    width: 100%;
+  }
+
+  .passport_input.pt {
+    padding-top: 0;
+  }
+
+  .tab_panel_section {
+    overflow: scroll;
+  }
+
+  .tab_panel_section input,
+  .tab_panel_section select {
+    padding: 5px 1rem;
+  }
+
+  table>tbody .header-level td {
+    height: 10rem;
+  }
+
+}
+
+@media only screen and (max-width: 920px) {
+  .passport_wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .passport_wrapper .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .passport_wrapper .user_passport {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1418px) {
+  .passport_wrapper .user_passport {
+    grid-template:
+      "a b c"1fr "d e h"1fr "f g ."1fr / 1fr 1fr 1fr;
+  }
+}
+
+/*============================= Tab Panel Section end===========================*/
+
+/*============================= Ticket reservation html + ===========================*/
+
+/*Ticket reservation*/
+
+.ticket-reservation__header {
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.ticket-reservation__header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.ticket-reservation__header-content {
+  flex: 1;
+}
+
+.icon-c {
+  display: inline-block;
+  background-size: cover !important;
+}
+
+.icon-transportation-up {
+  width: 21px;
+  height: 14px;
+  background: url("../img/transportation@2x.png") no-repeat;
+}
+
+.icon-user {
+  width: 16px;
+  height: 18px;
+  background: url("../img/user.png") no-repeat;
+}
+
+.ticket-reservation__header-item {
+  color: #fff;
+}
+
+.ticket-reservation__header-item-icon {
+  margin-bottom: 15px;
+}
+
+.ticket-reservation__header-item h3 {
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+.ticket-reservation__header-passangers div:first-child {
+  margin-right: 30px;
+}
+
+@media (min-width: 1200px) {
+  .ticket-reservation__header-content .container {
+    max-width: 1020px;
+  }
+}
+
+@media (max-width: 575px) {
+  .ticket-reservation__header {
+    padding-top: 115px;
+    text-align: center;
+  }
+
+  .ticket-reservation__header-item {
+    margin-bottom: 15px;
+  }
+
+  .ticket-reservation__header-passangers {
+    justify-content: center;
+  }
+
+  .ticket-reservation__header-item-icon {
+    margin-bottom: 5px;
+  }
+}
+
+/*Ticket Reservation content*/
+
+.ticket-reservation-inner {
+  padding: 80px 0;
+}
+
+@media (min-width: 1200px) {
+  .ticket-reservation-inner .container {
+    max-width: 980px;
+  }
+}
+
+.ticket-reservation__slider-area {
+  margin-bottom: 55px;
+}
+
+.ticket-reservation__slider {
+  margin-bottom: 30px;
+}
+
+.ticket-reservation__slider-heading {
+  color: #000;
+  padding-left: 62px;
+  margin-bottom: 15px;
+}
+
+.ticket-reservation__slider-heading a {
+  color: #F1B640;
+}
+
+.ticket-reservation__slider-heading a i {
+  font-size: 9px;
+}
+
+.ticket-reservation__slider-wrap {
+  padding: 0 55px;
+}
+
+.ticket-reservation__slider-wrap .slick-list {
+  margin: 0 -7px;
+}
+
+.ticket-reservation__slider-wrap .slick-slide {
+  margin: 0 7px;
+}
+
+.ticket-reservation__slider-item {
+  color: #000;
+  min-height: 160px;
+  padding: 15px;
+  border-radius: 2px;
+  border: 2px solid #EAEAEA;
+  position: relative;
+  cursor: pointer;
+}
+
+.ticket-reservation__slider-item.active {
+  color: #fff;
+  background: #1F94B7;
+}
+
+.ticket-reservation__slider-item input[type=radio] {
+  display: none;
+}
+
+.ticket-reservation__slider-item-bottom {
+  position: absolute;
+  bottom: 15px;
+}
+
+.ticket-reservation__slider-item small {
+  font-size: 12px;
+}
+
+.ticket-reservation__slider-wrap button.slick-next,
+.ticket-reservation__slider-wrap button.slick-prev {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 40px;
+  background: #F8F8F8;
+  outline: none;
+  border: none;
+}
+
+.ticket-reservation__slider-wrap button.slick-next {
+  right: 0;
+}
+
+.ticket-reservation__slider-wrap button.slick-prev {
+  left: 0;
+}
+
+/*Ticket reservation list*/
+
+.ticket-reservation-list__heading {
+  margin-bottom: 10px;
+}
+
+.ticket-reservation-list__heading span,
+.ticket-reservation-list__heading label {
+  color: #AEAEAE;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.ticket-reservation-list__heading label {
+  min-width: 60px;
+  margin-bottom: 0;
+}
+
+.ticket-reservation-list__sort {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-reservation-list__sort .form-control {
+  border: 2px solid #D8D8D8;
+}
+
+.ticket-reservation-list__item {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #1F94B7;
+}
+
+.ticket-reservation-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.ticket-reservation-list__item-wrap {
+  padding: 27px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed #EAEAEA;
+}
+
+.ticket-reservation-list__item-logo img {
+  max-width: 145px;
+}
+
+.ticket-reservation-list__item-dest span {
+  color: #777777;
+  font-size: 12px;
+}
+
+.ticket-reservation-list__item-dest h2 {
+  color: #000;
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.ticket-reservation-list__item-time {
+  text-align: center;
+}
+
+.ticket-reservation-list__item-time span {
+  color: #1F94B7;
+  font-size: 12px;
+}
+
+.ticket-reservation-list__item-time span.text-green {
+  color: #ADED5A;
+}
+
+.ticket-reservation-list__item-line {
+  width: 92px;
+  height: 1px;
+  background: #1F94B7;
+  position: relative;
+}
+
+.ticket-reservation-list__item-line:before,
+.ticket-reservation-list__item-line:after {
+  content: '';
+  position: absolute;
+  width: 21px;
+  background-size: cover !important;
+}
+
+.ticket-reservation-list__item-line:before {
+  top: -6px;
+  left: -30px;
+  height: 14px;
+  background: url("../img/transportation@2x.png") no-repeat;
+}
+
+.ticket-reservation-list__item-line:after {
+  top: -10px;
+  right: -30px;
+  height: 22px;
+  background: url("../img/transportation-down.png") no-repeat;
+}
+
+.ticket-reservation-list__right {
+  height: 100%;
+  position: relative;
+  padding: 30px;
+}
+
+.ticket-reservation-list__right ul li {
+  color: #777777;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ticket-reservation-list__right ul li span {
+  color: #444444;
+  font-size: 16px;
+}
+
+.ticket-reservation-list__right ul li span.price {
+  font-size: 30px;
+}
+
+.ticket-reservation-list__right .btn {
+  color: #323232;
+  height: 50px;
+  border-radius: 25px;
+  background: #F1B640;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ticket-reservation-list__item--border-l:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  bottom: 0;
+  border-left: 1px dashed #EAEAEA;
+}
+
+@media (min-width: 992px) {
+
+  .ticket-reservation-list__item:after,
+  .ticket-reservation-list__right:before,
+  .ticket-reservation-list__right:after {
+    content: '';
+    border: solid #1F94B7;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    position: absolute;
+    background: #fff;
+  }
+
+
+  .ticket-reservation-list__item:after {
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .ticket-reservation-list__right:before {
+    top: -5px;
+    left: -34px;
+    transform: rotate(45deg);
+  }
+
+  .ticket-reservation-list__right:after {
+    bottom: -5px;
+    left: -34px;
+    transform: rotate(-136deg);
+  }
+
+  .ticket-reservation-list__item-wrap:last-child {
+    border-bottom: none;
+  }
+
+  .ticket-reservation-list__right {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticket-reservation-list__item-wrap {
+    flex-direction: column;
+  }
+
+  .ticket-reservation-list__item-wrap>div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .navbar-expand-lg {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block !important;
+  }
+
+}
+
+/*============================= Ticket reservation html  end===========================*/
+
+
+/*============================= ticket Search html start(baxildi) ===========================*/
+
+    /* Related tours section */
+    .destinations .card-body {
+      padding: 0.8rem;
+    }
+   .destinations .card div{
+      overflow: hidden;
+    }
+    .destinations .card img{
+      transition: all 0.5s ease-in-out;
+    }
+   .destinations .card img:hover{
+     transform: scale(1.1);
+    }
+    .destinations .card{
+      width: 100% !important;
+      margin-top: 2rem;
+    }
+    .destinations .card-text{
+      color: #F1B640 !important;
+        margin-top: -3%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .destinations .card-title{
+      font-weight: bold;
+      color: #1F94B7;
+    }
+    .size-card img{
+        height: 13.8rem;
+    }
+    .size-card .card-text{
+      margin-top: -8px !important;
+    }
+    
+    .july .img-fluid {
+        width: 100%;
+        height: 100%;
+    }
+   .july .post-wrap button{
+        padding: 0.6rem 2rem;
+        border-radius: 26px;
+        background-color: #F1B640;
+        outline: none;
+        color: black;
+        border: 1px solid #F1B640;
+        font-weight: bold;
+    }
+    .card_text{
+        padding: 1rem;
+    }
+    @media only screen and (max-width: 1040px)
+    {
+        .size-card img{
+        height: 11.3rem;
+    }
+    }
+    
+    @media only screen and (max-width: 768px)
+    {
+        .size-card img{
+        height: unset !important;
+    }
+    .card_text {
+        padding: 2rem;
+    }
+    .july .post-wrap button{
+        width: 100%;
+    }
+    .world .txt{
+      margin: 0rem !important;
+      text-align: center;
+    }
+    .recommed .post-wrap__content {
+        padding: 0 2rem !important;
+     }
+    }
+    
+   .recommed .post-wrap {
+        margin-bottom: 30px;
+    }
+    
+    .recommed .post-wrap__img,
+    .recommed .post-wrap__img img {
+        height: 100%;
+    }
+    
+    .recommed .post-wrap__img img {
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .recommed .post-wrap__content {
+        padding: 8px;
+    }
+    
+    .recommed .post-wrap__title {
+        margin-bottom: 15px;
+    }
+    .recommed .post-wrap__title div{
+    margin-top: 1rem;
+    }
+    .recommed .post-wrap .calend{
+      color: #1F94B7;
+    }
+    
+    .recommed .post-wrap__title i {
+        margin-right: 3px;
+    }
+    
+    .recommed .post-wrap__desc {
+        color: #666666;
+        font-weight: 300;
+    }
+    
+   .recommed  .post-wrap__right {
+        color: #000;
+    }
+    
+    .recommed .post-wrap__right p:first-child {
+      margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+    
+   .recommed .post-wrap .post-wrap__right .price {
+        font-size: 40px;
+        color: #1F94B7;
+    }
+
+    .world .txt{
+      margin: 5rem;
+    }
+    .world .txt h3{
+     color: #F1B640;
+    }
+    .world .txt p{
+      font-weight: 600;
+    }
+    
+    .related  center button {
+        padding: 0.6rem 4rem;
+        border-radius: 26px;
+        background-color: #F1B640;
+        outline: none;
+        color: black;
+        border: 1px solid #F1B640;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+/*============================= ticket Search html end ===========================*/
+/*============================= Reservation details html  ===========================*/
+
+.reservation_payment {
+  padding: 10rem 0 4rem ;
+  color: #777777;
+
+
+}
+
+.reservation_payment .guest_information {
+  margin-bottom: 2rem;
+  background-color: #F1F2F8;
+  border-radius: 10px;
+  box-shadow: 0 1px 9px 0 #AEAEAE;
+}
+
+.reservation_payment .about_guests {
+  background-color: white;
+}
+
+.reservation_payment .about_guests,
+.reservation_payment .payment_metod,
+.reservation_payment .ticket_info {
+  box-shadow: 0 1px 15px -4px #AEAEAE;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.reservation_payment .left_icon {
+  margin-right: 1rem;
+}
+
+.reservation_payment .guest_information span {
+  color: black;
+}
+
+.reservation_payment h3 {
+  margin: 1.5rem 0;
+  color: black;
+}
+
+.reservation_payment .extra_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.reservation_payment .info_input {
+  margin-bottom: 20px;
+}
+
+.reservation_payment .info_input input {
+  height: 45px;
+  padding: 5px 10px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.reservation_payment .guest_form {
+  display: grid;
+  grid-template:
+    "a b b c"
+    "d d . ."/ 1.5fr 1fr 1fr 2fr;
+  grid-gap: 15px;
+  padding: 20px 0;
+}
+
+.reservation_payment .guest_form .item1 {
+  grid-area: a;
+}
+
+.reservation_payment .guest_form .item2 {
+  grid-area: b;
+}
+
+.reservation_payment .guest_form .item3 {
+  grid-area: c;
+}
+
+.reservation_payment .guest_form .item4 {
+  grid-area: d;
+}
+
+.reservation_payment .guest_form .date {
+  display: flex;
+}
+
+.reservation_payment .guest_form .date input {
+  margin-right: 5px;
+}
+
+.reservation_payment .guest_information_input {
+  margin-bottom: 1rem;
+}
+
+.reservation_payment .guest_information_input input,
+.reservation_payment .guest_information_input select {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #F1B640;
+  border-radius: 3px;
+}
+
+.reservation_payment .guest_information .user_icon {
+  margin-right: 10px;
+}
+
+.reservation_payment .guest_information .user_icon svg {
+  width: 25px;
+}
+
+.reservation_payment .guest_information .va-b {
+  vertical-align: bottom;
+}
+
+.reservation_payment .collapse_wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Payment method */
+
+.payment_metod .radio_group {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.payment_metod .radio_group label {
+  display: -webkit-box;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+
+.payment_metod .radio_group label input {
+  position: absolute;
+  left: -9999px;
+}
+
+.payment_metod .radio_group label input:checked+span {
+  background-color: #1F94B7;
+  color: white;
+}
+
+.payment_metod .radio_group label input:checked+span:before {
+  box-shadow: inset 0 0 0 0.4375em #F1B640;
+}
+
+.payment_metod .radio_group label span {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 5px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  width: 100%;
+}
+
+.payment_metod .radio_group label span:hover {
+  background-color: #d6d6e5;
+}
+
+.payment_metod .radio_group label span:before {
+  display: -webkit-box;
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #B9B9B9;
+}
+
+.payment_metod .extra_info .info_input {
+  position: relative;
+}
+
+.payment_metod .extra_info .info_input span {
+  position: absolute;
+  right: 30px;
+  top: 56%;
+}
+
+.reservation_payment .request_container {
+  display: grid;
+  grid-template:
+    "a b"
+    "c c"/1fr 1fr;
+  grid-gap: 20px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.reservation_payment .request_container .checkbox_group {
+  grid-area: a;
+}
+
+.reservation_payment .checkbox_group .custom-control-input:checked~.custom-control-label::before {
+  background-color: #F1B640;
+  border: 1px solid #F1B640;
+}
+
+.reservation_payment .request_container .option_group {
+  grid-area: b;
+}
+
+.reservation_payment .request_container .textarea {
+  grid-area: c;
+}
+
+.request_container .option_group .md-form {
+  margin-top: 0;
+}
+
+.request_container .option_group .select-wrapper {
+  width: 65%;
+  float: right;
+}
+
+.request_container .option_group .select-wrapper span.caret {
+  top: 16px;
+  right: 15px;
+}
+
+.request_container .option_group input.select-dropdown {
+  border: 1px solid #ced4da;
+  height: 45px;
+  padding: 5px 15px;
+}
+
+.request_container .textarea .form-control:focus {
+  border-color: #F1B640;
+  box-shadow: 0 0 0 0.2rem rgba(255, 187, 51, 0.42);
+}
+
+.reservation_payment .payment_metod .submit_wr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  padding-top: 1.5rem;
+}
+
+.reservation_payment .payment_metod .submit_wr .btn {
+  background-color: #F1B640;
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.reservation_payment .payment_metod .submit_wr .check {
+  color: #12C70D;
+  display: flex;
+  align-items: center;
+}
+
+/* Ticket Information */
+.ticket_info {
+  padding: 0 !important;
+}
+
+.ticket_info .hotel_name {
+  background-color: #1F94B7;
+  border: 1px solid #1F94B7;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem 0;
+}
+
+.ticket_info .hotel_name h4 {
+  font-weight: bold;
+}
+
+.ticket_info .ticket_content {
+  padding: 2rem;
+}
+
+.ticket_info .ticket_content .bd_style {
+  border-bottom: 1px dashed #EAEAEA;
+  padding: 20px 0;
+}
+
+.ticket_info .check_date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ticket_info .check_date span {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+.ticket_info .check_date div:last-child {
+  border-left: 2px solid #D8D8D8;
+  padding-left: 15px;
+}
+
+.ticket_info .check_date>div span:nth-child(2) {
+  color: #1F94B7;
+}
+
+.ticket_info .included_comp>div {
+  margin-bottom: 1rem;
+}
+
+.ticket_info .included_comp .imp_info {
+  color: #1F94B7;
+}
+
+.ticket_info .included_comp>div>span {
+  padding-right: 5px;
+  color: black;
+}
+
+.ticket_info .included_comp>div .meal_icon {
+  margin: 0 7px
+}
+
+.ticket_info .room_info p {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.ticket_info .room_price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ticket_info .room_price p:last-child {
+  text-align: end;
+  color: #222222;
+}
+
+.ticket_info .promo_code input,
+.ticket_info .pay select {
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ticket_info .pay {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 15px;
+}
+
+.ticket_info .pay>div>p {
+  padding-top: 20px;
+}
+
+.ticket_info .total_payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket_info .total_payment select {
+  height: 45px;
+  width: 6rem;
+  padding: 10px;
+  border: 1px solid #979797;
+  border-radius: 3px;
+}
+
+.ticket_info .total_payment div>p {
+  margin-bottom: 10px;
+}
+
+.ticket_info .total_payment div>p:last-child {
+  color: #1F94B7;
+  font-size: 28px;
+}
+
+.ticket_info .tax_price>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket_info .tax_price>p {
+  color: #E33D3D;
+}
+
+.ticket_info .tax_price>div span:last-child {
+  color: black;
+}
+
+.ticket_info .ticket_content>span {
+  color: #1F94B7;
+  margin-top: 1rem;
+  display: block;
+}
+
+@media only screen and (max-width: 460px) {
+  .reservation_payment .payment_metod .submit_wr {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .reservation_payment .extra_info {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation_payment .guest_form {
+    grid-template:
+      "a"
+      "b"
+      "c"
+      "d"/ 1fr;
+  }
+
+  .reservation_payment .request_container {
+    grid-template:
+      "a"
+      "b"
+      "c"/1fr;
+  }
+
+  .request_container .option_group .select-wrapper {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*============================= Reservation details html end  ===========================*/
+
+/*============================= Extra service html  ===========================*/
+.extra_service_section {
+  padding: 2rem 0;
+}
+
+.breadcrumb_wrapper {
+  position: relative;
+}
+
+.breadcrumb_wrapper .breadcrumb {
+  display: flex;
+  position: relative;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+.breadcrumb_wrapper .above_line {
+  height: 3px;
+  width: 100%;
+  max-width: 435px;
+  background: #1F94B7;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  margin-bottom: -1px;
+}
+
+.breadcrumb_wrapper ul::after {
+  content: "";
+  height: 1.5px;
+  width: -webkit-fill-available;
+  max-width: 640px;
+  position: absolute;
+  bottom: 0;
+  background: #B6B6B6;
+  border-radius: 3px;
+}
+
+.breadcrumb_wrapper ul .active_li {
+  color: #1F94B7 !;
+}
+
+.breadcrumb_wrapper ul .inactive {
+  color: #AEAEAE;
+}
+
+.breadcrumb_wrapper ul li {
+  margin-right: 20px;
+  padding: 1rem 0;
+}
+
+.breadcrumb_wrapper ul li span {
+  margin-left: 10px;
+}
+
+.extra_service_section .services_container {
+  padding: 2rem 0;
+}
+
+.extra_service_section .service {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 15px;
+  background-color: #1F94B7;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  align-items: center;
+  color: #F1B640;
+}
+
+.extra_service_section .service>div h1 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.extra_service_section .service .btn_wrapper .btn {
+  box-shadow: none;
+  border: 1px solid #F1B640;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.extra_service_section .service .modal {
+  color: #555555;
+  text-align: left;
+}
+
+.extra_service_section .service .modal-header {
+  border-bottom: none;
+  padding: 2rem 1rem;
+}
+
+.extra_service_section .service .modal-header>span {
+  color: #F1B640;
+  border: 1px solid #1F94B7;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 15px;
+}
+
+.extra_service_section .service .modal-header .close {
+  font-size: 3rem;
+  color: #000;
+}
+
+.extra_service_section .service .modal-header h4 {
+  color: black;
+}
+
+.extra_service_section .service .modal-body .center {
+  margin: auto;
+}
+
+.extra_service_section .service .modal-body .collapse_header {
+  background-color: #1F94B7;
+  color: white;
+  box-shadow: 0 2px 6px #222222;
+}
+
+.extra_service_section .modal-body .collapse_content ul {
+  background-color: #21B0DA;
+  color: white;
+  padding: 2rem;
+}
+
+.extra_service_section .modal-body .collapse_content li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.extra_service_section .food_wr .modal-body {
+  padding: 1rem 7rem 7rem;
+  color: black;
+}
+
+.extra_service_section .food_wr .modal-body>p {
+  font-size: 20px;
+}
+
+.extra_service_section .food_wr .modal-body>div p {
+  margin-bottom: 0;
+}
+
+.extra_service_section .sms_warning {
+  display: flex;
+  border: 1px solid #1F94B7;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.extra_service_section .sms_warning .sms_text {
+  padding: 0 15px;
+}
+
+.extra_service_section .sms_warning .sms_text h4 {
+  color: #1F94B7;
+  font-weight: bold;
+}
+
+.extra_service_section .sms_warning .custom-control-input:checked~.custom-control-label::before {
+  background-color: #F1B640;
+  border: 1px solid #F1B640;
+}
+
+.extra_service_section .sms_warning .custom-control-label::before {
+  border-color: #F1B640;
+}
+
+.extra_service_section .payment_metod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0;
+}
+
+.extra_service_section .payment_metod h3 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 365px) {
+  .extra_service_section .modal-body .collapse_content ul {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .extra_service_section .payment_metod {
+    grid-template-columns: 1fr;
+  }
+
+  .extra_service_section .service {
+    display: block;
+  }
+
+  .extra_service_section .food_wr .modal-body {
+    padding: 0rem 3rem 4rem;
+  }
+}
+
+/*============================= Extra service html end  ===========================*/
+
+
+
+/*============================= Flight information html  ===========================*/
+
+.flight_info_section {
+  padding-top: 6rem;
+  
+}
+.flight_info_section .flight_header {
+  text-align: center;
+  background-color: #1F94B7;
+  color: white;
+  padding: 2rem;
+  position: relative;
+}
+
+.flight_info_section .flight_header span {
+  padding: 0 10px;
+}
+
+.flight_info_section .flight_header::after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin-left: -30px;
+  border-width: 2rem;
+  border-style: solid;
+  border-color: transparent #1F94B7 #1F94B7 transparent;
+  transform: rotate(45deg);
+  border-radius: 5px 0;
+}
+
+.flight_info_section .flight_body {
+  padding: 2rem 0;
+}
+
+.flight_info_section .flight_body .breadcrumb_wrapper .above_line {
+  max-width: 285px;
+}
+
+.flight_info_section .flight_ticket_inner {
+  margin: 2rem 0;
+}
+
+.flight_info_section .ticket_item {
+  background-color: #F1F2F8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.flight_info_section .ticket_item_wrap {
+  border: 1px solid #1F94B7;
+  border-radius: 5px;
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.flight_info_section .ticket_item_wrap::before,
+.flight_info_section .ticket_item_wrap::after {
+  content: "";
+  position: absolute;
+  right: 173px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.flight_info_section .ticket_item_wrap::before {
+  top: -6px;
+  border-color: transparent #1F94B7 #1F94B7 transparent;
+}
+
+.flight_info_section .ticket_item_wrap::after {
+  bottom: -6px;
+  border-color: #1F94B7 transparent transparent #1F94B7;
+  background-color: white;
+}
+
+.flight_info_section .ticket_item_logo {
+  margin-bottom: 10px;
+}
+
+.flight_info_section .img-fluid {
+  max-width: 145px;
+}
+
+.flight_info_section .ticket_item_component {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  text-align: center;
+  align-items: center;
+  color: #AEAEAE;
+  font-size: 12px;
+}
+
+.ticket_item .ticket_item_luggage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: initial;
+  font-size: 14px;
+}
+
+.ticket_item .ticket_item_luggage>div img {
+  width: 17px;
+  margin-right: 5px;
+}
+
+.ticket_item .ticket_item_luggage span {
+  padding-bottom: 20px;
+}
+
+.ticket_item .ticket_item_dest h2 {
+  color: black;
+}
+
+.ticket_item .ticket_item_time span {
+  color: #1F94B7;
+  font-size: 14px;
+  display: block;
+  padding: 6px 0;
+}
+
+.ticket_item .ticket_item_time .text-green {
+  color: #ADED5A;
+}
+
+.ticket_item .ticket_item_time .ticket_item-line {
+  width: 92px;
+  background: #1F94B7;
+  height: 1px;
+  margin: auto;
+  position: relative;
+}
+
+.ticket_item .ticket_item_time .ticket_item-line>span:first-child {
+  position: absolute;
+  left: -30px;
+  top: -19px;
+}
+
+.ticket_item .ticket_item_time .ticket_item-line>span:last-child {
+  position: absolute;
+  right: -30px;
+  top: -20px;
+}
+
+.ticket_item .collapse_inner {
+  box-shadow: 0px 4px 10px -4px #AEAEAE;
+  padding: 2rem;
+}
+
+.ticket_item .collapse_inner>div {
+  padding: 0 2rem;
+}
+
+.ticket_item .collapse_inner .flight_time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.ticket_item .vl_line {
+  width: 2px;
+  height: 42px;
+  background-color: #AEAEAE;
+  margin: 0 2rem;
+  position: relative;
+}
+
+.ticket_item .vl_line::before,
+.ticket_item .vl_line::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #AEAEAE;
+  left: -4px;
+}
+
+.ticket_item .vl_line::before {
+  top: -9.5px;
+}
+
+.ticket_item .vl_line::after {
+  bottom: -9.5px;
+}
+
+.ticket_item .collapse_inner .flight_address p {
+  margin: 15px 0;
+}
+
+.ticket_item .collapse_inner .flight_address span {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.ticket_item .collapse_inner .logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+}
+
+.ticket_item .collapse_inner .logo img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ticket_item .collapse_inner .bg-white {
+  color: #E33D3D;
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ticket_item .collapse_inner .bg-white>span:first-child {
+  margin-right: 3rem;
+}
+
+.ticket_item .collapse_inner .arrive_date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ticket_item .collapse_inner .arrive_date>p {
+  margin-bottom: 0;
+}
+
+.ticket_item .collapse_inner .arrive_date>p>span {
+  padding: 0 5px;
+}
+
+.ticket_item .collapse_inner .arrive_date>p>span:first-child {
+  font-weight: bold;
+}
+
+.ticket_item .collapse_inner .arrive_date>span {
+  display: block;
+  margin: 0 20px;
+  width: 2px;
+  height: 18px;
+  background: black;
+  border-radius: 10px;
+}
+
+.flight_info_section .passenger_list {
+  max-width: 250px;
+  width: 100%;
+}
+
+.flight_info_section .passenger_list .card {
+  border: none;
+}
+.flight_info_section .passenger_list .card-header  h5{
+  color: white !important;
+
+}
+
+.flight_info_section .passenger_list .card-header {
+  background-color: #1F94B7;
+  box-shadow: 0 2px 10px #222222;
+  color: white !important;
+  z-index: 5;
+}
+
+.flight_info_section .passenger_list .card-body {
+  background-color: #21B0DA;
+  color: white;
+  padding: 1rem 1.5rem;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.flight_info_section .passenger_info {
+  border: 1px solid #F1F2F8;
+  border-radius: 5px;
+  padding-top: 1rem;
+  margin: 3rem 0;
+}
+
+.flight_info_section .passenger_info input,
+.flight_info_section .passenger_info select {
+  height: 45px;
+  border-radius: 5px;
+  padding: 5px 1rem;
+  width: 100%;
+  font-size: 14px;
+}
+.flight_info_section .passport_wrapper{
+  margin: 0;
+}
+.flight_info_section .passport_wrapper form{
+  margin: 0 auto;
+}
+.flight_info_section .passport_wrapper .user_passport {
+  grid-template:
+  "c a b"1fr
+  "d e h"1fr
+  "f g ."1fr / 1fr 1fr 1fr;
+}
+
+.flight_info_section .add_passenger{
+  border: none;
+  border-radius: 5px;
+  padding: 10px 3rem;
+  background-color: #F1F2F8;
+  color: #1F94B7;
+  font-size: 18px;
+}
+
+.flight_info_section .flight_info_aside{
+  margin: 2rem 0;
+}
+.flight_info_section .flight_info_aside .card{
+  background-color: #F1F2F8;
+}
+
+.flight_info_section .flight_info_aside .card-header{
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.flight_info_section .flight_info_aside .card-header span{
+  color: #F1B640;
+}
+.flight_info_section .flight_info_aside .card-body{
+  padding: 0 1.5rem;
+  color: #AEAEAE;
+}
+.flight_info_aside .ticket_item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.flight_info_aside .ticket_item p span{
+  display: block;
+}
+.flight_info_aside .ticket_item .vl_line{
+  margin-right: 1rem;
+  margin-left: 6px;
+  overflow: visible;
+  transform: translateY(-16px);
+}
+.flight_info_aside div p{
+  margin-bottom: 10px;
+}
+.flight_info_aside .icon{
+  color: black !important;
+  margin-right: 5px;
+}
+.flight_info_section .flight_info_aside .bg-white{
+  border-radius: 4px;
+  padding: 5px 15px;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+.flight_info_section .flight_info_aside .extra_info{
+  text-align: center;
+  color: #1F94B7;
+  margin-bottom: 10px;
+}
+.flight_info_aside .services .card-header div,
+.flight_info_aside .services .card-body p{
+  display: flex;
+  justify-content: space-between;
+  color: #222222;
+}
+.flight_info_aside .services .card-header div >span{
+  color: #1F94B7;
+}
+.flight_info_aside .services .card-body p{
+  margin-bottom: 5px;
+}
+.flight_info_aside .passengers .passenger_name{
+  margin-top: 1rem;
+}
+.flight_info_aside .passengers .passenger_name h5{
+  font-size: 18px;
+}
+.flight_info_aside .passengers .passenger_name span{
+  color: #1F94B7;
+}
+.flight_info_aside .passengers .passenger_1 .luggage:not(:last-child){
+  border-bottom: 1px solid #AEAEAE;
+  margin: 10px 0;
+}
+.flight_info_aside .passengers .passenger_1 .luggage p{
+  display: flex;
+  justify-content: space-between;
+}
+.flight_info_aside .passengers .passenger_1 .luggage >div span{
+  font-weight: bold;
+  color: black;
+}
+.flight_info_aside .services .total_price{
+  display: flex;
+  justify-content: space-between;
+  color: #1F94B7;
+  font-size: 20px;
+  margin: 2rem 0;
+}
+.flight_info_aside .services .total_price span{
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 426px){
+  .ticket_item .collapse_inner{
+    padding: 1.5rem 0.5rem;
+  }
+  .ticket_item .vl_line{
+    margin: 0 1rem;
+  }
+  .ticket_item .collapse_inner>div{
+    padding: 0 0.5rem;
+  }
+ 
+}
+
+@media only screen and (max-width: 768px){
+  .flight_info_section .ticket_item_component{
+    grid-template-columns: 1fr;
+  }
+  .ticket_item .ticket_item_luggage{
+    justify-content: center;
+  }
+  .ticket_item .ticket_item_luggage > span{
+    margin-left: 1rem;
+  }
+  .ticket_item .collapse_inner .arrive_date>span{
+    display: none;
+  }
+  
+}
+@media only screen and (min-width: 921px) and (max-width: 1201px) {
+  .flight_info_section .passenger_info .user_passport{
+    width: auto;
+  }
+}
