@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MyFastFoodProject.DAL;
+using MyFastFoodProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,25 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
+builder.Services.AddIdentity<ProgramUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = true; //R?q?m t?l?b edin
+    options.Password.RequireLowercase = true; //Kiçik h?rf t?l?b edin
+    options.Password.RequireUppercase = true; //Böyük h?rf t?l?b edin
+    options.Password.RequiredLength = 6; //T?l?b olunan uzunluq...
+    options.Password.RequireNonAlphanumeric = false; //@ * ! ve.s kimi simvollar olmalidi
+    options.Lockout.MaxFailedAccessAttempts = 5; //5 giri?ten sonra bloklanir 
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMilliseconds(5); //bloklamndiqdan 5deq sonra acilir
+    options.Lockout.AllowedForNewUsers = true; //yeni qeydiyyat userdirse passwordu unuda biler.bir nece yazdiqda bloklamaya bilersiz
+                                               //   options.User.AllowedUserNameCharacters =
+                                               //"abcdefghijklmnopqrstuvwxyz0123456789._";//olmas?n? istediyiniz vacib karaterleri yazin
+    options.User.RequireUniqueEmail = true; //unique emaail adresleri olsun (1emaille bir qeydiyyat)
+    options.SignIn.RequireConfirmedEmail = false; //qeydiyyat etdikden sonra email ile token gönderecek 
+    options.SignIn.RequireConfirmedPhoneNumber = false; //telefon do?rulamas?
 });
 var app = builder.Build();
 

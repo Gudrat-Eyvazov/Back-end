@@ -44,11 +44,14 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
             appDbContext.SaveChanges();
             return RedirectToAction("Index");
         }
-        public IActionResult Delete(int id)
+        public JsonResult Delete(int id)
         {
             if (id == 0)
             {
-                return NotFound();
+                return Json(new
+                {
+                    status = 400
+                });
             }
             var slider = appDbContext.Sliders.Find(id);
             if (slider != null)
@@ -56,7 +59,11 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
                 appDbContext.Sliders.Remove(slider);
                 appDbContext.SaveChanges();
             }
-            return RedirectToAction("Index");
+            return Json(new
+            {
+                status = 200
+            });
+
         }
 
         [HttpGet]

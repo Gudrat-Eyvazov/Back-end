@@ -1,17 +1,13 @@
-﻿@model List<Slider>
+﻿@model List<Products>
 @section Styles {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css" rel="stylesheet" />
 
 }
 <div class="page-content">
     <div class="container-fluid">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
+     <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Create">Create new Product</a>
 
         <!-- start page title -->
-        
         <!-- end page title -->
 
 
@@ -23,47 +19,41 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Tittle</th>
-                                    <th scope="col">Subtitle</th>
+                                    <th scope="col">Price</th>
                                     <th scope="col">Description</th>
-                                    <th scope="col">LastPrice</th>
-                                    <th scope="col">NewPrice</th> 
-                                    <th scope="col" class="orta" >Img </th>
+                                    
+                                    <th scope="col" class="orta">Img </th>
                                     <th scope="col">Operation</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                   <tr>
-                                       <td>
-                                           @item.Tittle
-                                       </td>
-                                   
+                                    <tr>
                                         <td>
-                                            @item.Subtitle
+                                            @item.Title
                                         </td>
-                                    
+
+                                        <td>
+                                            @item.Price
+                                        </td>
+
                                         <td>
                                             @item.Description
                                         </td>
-                                   
+
                                         <td>
-                                            @item.LastPrice
+                                            @item.Category.Name
                                         </td>
-                                 
+
+
+                                        
                                         <td>
-                                            @item.NewPrice
+                                            <a class="deleteBtn btn btn-danger" asp-area="Admin" asp-controller="Products" asp-action="Delete" asp-route-id="@item.Id">Delete </a>
+                                            <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id">Edit </a>
                                         </td>
-                                    
-                                        <td>
-                                            <img width="200" height="200" src="~/uploadSlider/@item.ImgUrl"/>
-                                        </td>
-                                        <td>
-                                          <a class="deleteBtn btn btn-danger" asp-area="Admin" asp-controller="Slider" asp-action="Delete" asp-route-id="@item.Id">Delete </a>
-                                            <a class="btn btn-success" asp-area="Admin" asp-controller="Slider" asp-action="Edit" asp-route-id="@item.Id">Edit </a>
-                                        </td> 
                                     </tr>
-                                  
+
                                 }
                             </tbody>
                         </table>
@@ -77,69 +67,7 @@
 
     </div>
 </div><!-- End Page-content -->
-
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="SliderCreateForm" class="row" method="post" asp-area="Admin" asp-controller="Slider" asp-action="Create">
-                    @Html.AntiForgeryToken()
-                    <div class="col-md-12">
-                        <label>
-                            Tittle
-                        </label>
-                        <input name="Tittle" type="text" class="form-control" />
-@*                         <span asp-validation-for="Tittle" class="text-danger"></span>
- *@                    </div>
-                    <div class="col-md-12">
-                        <label>
-                            Subtitle
-                        </label>
-                        <input name="Subtitle" type="text" class="form-control" />
-@*                         <span asp-validation-for="Subtitle" class="text-danger"></span>
- *@                    </div>
-                    <div class="col-md-12">
-                        <label>
-                            Description
-                        </label>
-                        <input name="Description" type="text" class="form-control" />
-                       @*  <span asp-validation-for="Description" class="text-danger"></span> *@
-                    </div>
-                    <div class="col-md-12">
-                        <label>
-                            LastPrice
-                        </label>
-                        <input name="LastPrice" type="text" class="form-control" />
-                       @*  <span asp-validation-for="LastPrice" class="text-danger"></span> *@
-                    </div>
-                    <div class="col-md-12">
-                        <label>
-                            NewPrice
-                        </label>
-                        <input name="NewPrice" type="text" class="form-control" />
-                       @*  <span asp-validation-for="NewPrice" class="text-danger"></span> *@
-                    </div>
-                    <div class="col-md-12">
-                        <label>
-                            Imgage
-                        </label>
-                        <input name="ImgUrl" type="file" class="form-control" />
-                    </div>
-                 
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button form="SliderCreateForm" type="submit" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
 @section Scripts {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
 

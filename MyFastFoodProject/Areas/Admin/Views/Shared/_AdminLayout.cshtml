@@ -31,7 +31,7 @@
             padding-left: 80px;
         }
     </style>
-
+    @RenderSection("Styles", false);
 </head>
 
 <body data-sidebar="dark">
@@ -130,9 +130,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class=" waves-effect">
+                            <a asp-controller="Products" asp-action="Index" asp-area="Admin" class="waves-effect">
                                 <i class="bx bx-calendar"></i>
-                                <span key="t-dashboards">Calendars</span>
+                                <span key="t-dashboards">Product</span>
                             </a>
                         </li>
 
@@ -164,6 +164,8 @@
     <script src="~/Adminassets/js/pages/job-grid-list.init.js"></script>
 
     <script src="~/Adminassets/js/app.js"></script>
+    @RenderSection("Scripts", false);
+
 
 </body>
 

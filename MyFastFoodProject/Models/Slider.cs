@@ -25,6 +25,7 @@ namespace MyFastFoodProject.Models
         public IFormFile ImgFile { get; set; }
 
         public bool IsCheck { get; set; } = false;
+        
 
     }
 }
