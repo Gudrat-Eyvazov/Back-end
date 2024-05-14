@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MyFastFoodProject.Models;
+using MyFastFoodProject.Services;
 
 namespace MyFastFoodProject.DAL
 {
@@ -13,6 +14,8 @@ namespace MyFastFoodProject.DAL
         public DbSet<Products> Products { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Order> Orders { get; set; }
+        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

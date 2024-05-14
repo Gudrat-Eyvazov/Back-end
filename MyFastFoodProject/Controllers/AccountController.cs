@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyFastFoodProject.DAL;
 using MyFastFoodProject.Models;
 using MyFastFoodProject.Models.ViewModels;
+using MyFastFoodProject.Services;
 
 namespace MyFastFoodProject.Controllers
 {
@@ -11,11 +12,13 @@ namespace MyFastFoodProject.Controllers
         private readonly AppDbContext appDbContext;
         private readonly UserManager<ProgramUser> _userManager;
         private readonly SignInManager<ProgramUser> _signinmanager;
-        public AccountController(AppDbContext _appDbContext, UserManager<ProgramUser> userManager, SignInManager<ProgramUser> signinmanager)
+        private readonly IEmailService _emailService;
+        public AccountController(AppDbContext _appDbContext, UserManager<ProgramUser> userManager, IEmailService emailService, SignInManager<ProgramUser> signinmanager)
         {
             appDbContext = _appDbContext;
             _userManager = userManager;
             _signinmanager = signinmanager;
+            _emailService = emailService;
         }
         [HttpPost]
         public async Task<ActionResult> SignUp(SignUpVM model)
@@ -33,11 +36,16 @@ namespace MyFastFoodProject.Controllers
             var result = await _userManager.CreateAsync(programUser, model.Password);
             if (result.Succeeded)
             {
-                RedirectToAction("Index", "Home");
+                var token = await _userManager.GenerateEmailConfirmationTokenAsync(programUser);
+                var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = programUser.Id, token = token }, Request.Scheme);
+                await _emailService.SendEmailAsync(model.TestEmail, "Confirm your email", $"Please confirm your account by <a href='{confirmationLink}'>clicking here</a>.");
+                return RedirectToAction("Index", "Home");
             }
-            //foreach (var item in result.Errors)
-            //{
-            //}  
+            foreach (var item in result.Errors)
+            {
+                ModelState.AddModelError("", item.Description);
+
+            }
 
             return View();
         }
