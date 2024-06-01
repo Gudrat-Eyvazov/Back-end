@@ -14,7 +14,8 @@ namespace MyFastFoodProject.DAL
         public DbSet<Products> Products { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Order> Orders { get; set; }
-        
+        public DbSet<Images> Images { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,6 +23,7 @@ namespace MyFastFoodProject.DAL
             modelBuilder.Entity<Slider>().HasData(
                 new Slider {Id=1, Tittle = "Burger", Subtitle = "withmushroom", Description = "tasty", LastPrice = "$17", NewPrice = "$12", ImgUrl = "3af2761a-1bc2-4674-939e-abf963f4e06cblog-details", IsCheck = true }
                 );
+
         }
     }
 }

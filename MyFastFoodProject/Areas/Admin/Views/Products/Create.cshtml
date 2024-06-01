@@ -29,29 +29,40 @@
                         <form class="row" method="post" asp-area="admin" asp-controller="products" asp-action="create" enctype="multipart/form-data">
                             @Html.AntiForgeryToken()
 
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <label>
                                     Tittle
                                 </label>
                                 <input asp-for="Title" type="text" class="form-control" />
                                 <span asp-validation-for="Title" class="text-danger"></span>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <label>
                                     Price
                                 </label>
                                 <input asp-for="Price" type="text" class="form-control" />
                                 <span asp-validation-for="Price" class="text-danger"></span>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <label>
                                     Description
                                 </label>
                                 <input asp-for="Description" type="text" class="form-control" />
                                 <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
-                            
-                            <div class="col-md-2">
+                            <div class="col-md-3">
+                                <label>
+                                   Esas Sekil
+                                </label>
+                                <input asp-for="ImgUrlBaseFile" type="file" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
+                                <label>
+                                    Elave Sekiller
+                                </label>
+                                <input asp-for="ImagesFiles" type="file" class="form-control" multiple />
+                            </div>
+                            <div class="col-md-3">
                                 <label>
                                     Category
                                 </label>
@@ -63,7 +74,7 @@
                                     
                                 </select>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <button type="submit" class="btn btn-danger mt-3 btn-block">Add Database </button>
                             </div>
                         </form>

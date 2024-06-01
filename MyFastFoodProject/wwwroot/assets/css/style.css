@@ -9717,36 +9717,3 @@ textarea.form-control {
   font-size: 15px;
   margin-bottom: 0;
 }
-
-.buy-now-btn {
-  right: 20px;
-  z-index: 99;
-  top: 50%;
-  position: fixed;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-radius: 30px;
-  display: inline-block;
-  color: #ffffff;
-  background-color: #82b440;
-  padding: 10px 20px 10px 42px;
-  -webkit-box-shadow: 0 1px 20px 1px #82b440;
-          box-shadow: 0 1px 20px 1px #82b440;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.buy-now-btn img {
-  top: 50%;
-  left: 20px;
-  width: 15px;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.buy-now-btn:hover {
-  color: #ffffff;
-  background-color: #94be5d;
-}
-/*# sourceMappingURL=style.css.map */

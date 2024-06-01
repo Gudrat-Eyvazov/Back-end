@@ -587,25 +587,7 @@ jQuery(function ($) {
             $(".newsletter-form").removeClass("animate__animated animate__shakeX");
         }, 1000)
     }
-    function submitMSGSub(valid, msg) {
-        if (valid) {
-            var msgClasses = "validation-success";
-        } else {
-            var msgClasses = "validation-danger";
-        }
-        $("#validator-newsletter").removeClass().addClass(msgClasses).text(msg);
-    }
-    // Ajax mailchimp
-    $(".newsletter-form").ajaxChimp({
-        url: "https://hibootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9", // Your url MailChimp
-        callback: callbackFunction
-    });
-
-    // Buy Now Btn
-	$('body').append("<a href='https://themeforest.net/checkout/from_item/29444190?license=regular&support=bundle_6month&_ga=2.65067182.1095024147.1646685914-918236941.1644836235' target='_blank' class='buy-now-btn'><img src='assets/images/envato.png' alt='envato'/>Buy Now</a>");
-
-	// Switch Btn
-	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
+   
 }($));
 
 

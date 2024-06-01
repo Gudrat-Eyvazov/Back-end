@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyFastFoodProject.Controllers;
 using MyFastFoodProject.DAL;
 using MyFastFoodProject.Extensions;
@@ -7,6 +8,7 @@ using MyFastFoodProject.Models;
 namespace MyFastFoodProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class SliderController : Controller
     {
         private AppDbContext appDbContext;
@@ -31,17 +33,24 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
         public async Task<IActionResult> Create(Slider slider)
         {
 
-           
-            if (!slider.ImgFile.IsImage())
+            if (!FormFileExtensions.IsImage(slider.ImgFile))
             {
                 ModelState.AddModelError("Photo", "Image type is not valid");
                 return View(slider);
             }
-            string filename = await slider.ImgFile.SaveFileAsync(_env.WebRootPath, "uploadSlider");
-            slider.ImgUrl = filename;
+            if (FormFileExtensions.IsImage(slider.ImgFile))
+            {
+                string filename = await slider.ImgFile.SaveFileAsync(_env.WebRootPath, "uploadSlider");
+                slider.ImgUrl = filename;
 
-            appDbContext.Sliders.Add(slider);
-            appDbContext.SaveChanges();
+                appDbContext.Sliders.Add(slider);
+                appDbContext.SaveChanges();
+            }
+            else
+            {
+                return RedirectToAction("Create");
+            }
+
             return RedirectToAction("Index");
         }
         public JsonResult Delete(int id)

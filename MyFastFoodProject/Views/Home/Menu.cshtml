@@ -1,4 +1,5 @@
-﻿<div class="header-bg header-bg-page">
+﻿@model List<Products>
+<div class="header-bg header-bg-page">
     <div class="header-padding position-relative">
         <div class="header-page-shape">
             <div class="header-page-shape-item">
@@ -93,7 +94,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -112,7 +113,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Pizza</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -131,7 +132,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Pizza</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -150,7 +151,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Avocado Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Avocado Pizza</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -169,7 +170,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Vegan Pizza</a></h3>
+                                        <h3><a asp-controller="Home"asp-action="ShopGrid">Vegan Pizza</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -188,7 +189,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Meat Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Meat Pizza</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -207,7 +208,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Ball Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Ball Pizza</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -226,7 +227,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Green Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Green Pizza</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -245,7 +246,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -264,7 +265,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -283,7 +284,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Pizza</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -302,7 +303,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Pizza</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Pizza</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -331,7 +332,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Burger</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -350,7 +351,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Burger</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -369,7 +370,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Burger</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -388,7 +389,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Avocado Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Avocado Burger</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -407,7 +408,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Vegan Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Vegan Burger</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -426,7 +427,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Meat Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Meat Burger</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -445,7 +446,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Ball Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Ball Burger</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -464,7 +465,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Green Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Green Burger</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -483,7 +484,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Burger</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -502,7 +503,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Burger</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -521,7 +522,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Burger</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -540,7 +541,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Burger</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Burger</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -569,7 +570,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Sandwitch</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -588,7 +589,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Sandwitch</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -607,7 +608,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Sandwitch</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -626,7 +627,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Avocado Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Avocado Sandwitch</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -645,7 +646,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Vegan Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Vegan Sandwitch</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -664,7 +665,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Meat Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Meat Sandwitch</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -683,7 +684,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Ball Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Ball Sandwitch</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -702,7 +703,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Green Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Green Sandwitch</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -721,7 +722,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Sandwitch</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -740,7 +741,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Pepperoni Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Sandwitch</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -759,7 +760,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Beefka Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Sandwitch</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -778,7 +779,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chicken Sandwitch</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Sandwitch</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -807,7 +808,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Strawberry Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Strawberry Shake</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -826,7 +827,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Cream Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Cream Shake</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -845,7 +846,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Cherry Venilla</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Cherry Venilla</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -864,7 +865,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Fruty Pebble</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Fruty Pebble</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -883,7 +884,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Oreo Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Oreo Shake</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -902,7 +903,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Banana Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Banana Shake</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -921,7 +922,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Italiano Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Italiano Shake</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -940,7 +941,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Green Cream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Green Cream</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -959,7 +960,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Cappuccino Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Cappuccino Shake</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -978,7 +979,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Cherry Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Cherry Shake</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -997,7 +998,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Strawberry Shake</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Strawberry Shake</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1016,7 +1017,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Cherry Venilla</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Cherry Venilla</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1045,7 +1046,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Italiano Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Italiano Icecream</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1064,7 +1065,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Creamy Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Creamy Icecream</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1083,7 +1084,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Chocolate Layer</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chocolate Layer</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1102,7 +1103,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Regular Cream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Regular Cream</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1121,7 +1122,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Light Flavour</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Light Flavour</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1140,7 +1141,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">French Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">French Icecream</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1159,7 +1160,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Creamy Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Creamy Icecream</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1178,7 +1179,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Milk Flavour</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Milk Flavour</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1197,7 +1198,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Perfect Pear</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Perfect Pear</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1216,7 +1217,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Italiano Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Italiano Icecream</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1235,7 +1236,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">French Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">French Icecream</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1254,7 +1255,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Light Icecream</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Light Icecream</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1283,7 +1284,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Frozen</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Frozen</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1302,7 +1303,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Decadent</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Decadent</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1321,7 +1322,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Zesty</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Zesty</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1340,7 +1341,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Luscious</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Luscious</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1359,7 +1360,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Creamy</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Creamy</a></h3>
                                         <h4>$7.45<del>$8.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1378,7 +1379,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Oreo Mixed</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Oreo Mixed</a></h3>
                                         <h4>$8.45<del>$9.24</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1397,7 +1398,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Zesty</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Zesty</a></h3>
                                         <h4>$9.45<del>$10.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1416,7 +1417,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Luscious</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Luscious</a></h3>
                                         <h4>$8.45<del>$12.01</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1435,7 +1436,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Creamy</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Creamy</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1454,7 +1455,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Oreo Mixed</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Oreo Mixed</a></h3>
                                         <h4>$4.59<del>$7.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1473,7 +1474,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Frozen</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Frozen</a></h3>
                                         <h4>$5.12<del>$6.59</del></h4>
                                     </div>
                                     <div class="receipe-cart">
@@ -1492,7 +1493,7 @@
                                 </div>
                                 <div class="receipe-content">
                                     <div class="receipe-info">
-                                        <h3><a href="shop-details.html">Creamy</a></h3>
+                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Creamy</a></h3>
                                         <h4>$6.57<del>$7.12</del></h4>
                                     </div>
                                     <div class="receipe-cart">
