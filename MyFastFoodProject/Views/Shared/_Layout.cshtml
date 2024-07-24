@@ -86,16 +86,16 @@
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
                                         <a asp-controller="Home" asp-action="Index">HOME</a>
-                                        
+
                                     </li>
                                     <li class="nav-item">
                                         <a asp-controller="Home" asp-action="Menu">MENU</a>
                                     </li>
                                     <li class="nav-item">
                                         <a asp-controller="Home" asp-action="About">ABOUT</a>
-                                        
+
                                     </li>
-                                   
+
                                     <li class="nav-item">
                                         <a asp-controller="Home" asp-action="ContactAs">CONTACT US</a>
                                     </li>
@@ -114,14 +114,15 @@
                                                 Welcome @User.Identity.Name
                                             </button>
                                             <ul class="dropdown-menu">
-                                               <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>                                            </ul>
+                                                <a class="dropdown-item" asp-controller="Account" asp-action="Logout">Logout</a>
+                                            </ul>
                                         </div>
                                     }
                                     else
                                     {
                                         <button class="navbar-authentication-button" type="button" id="auth1" data-bs-toggle="dropdown" aria-haspopup="true"><i class="flaticon-add-user"></i></button>
                                     }
-                                   
+
                                     <div class="authentication-box dropdown-menu" aria-labelledby="auth1">
                                         <div class="authentication-close"><i class="flaticon-cancel"></i></div>
                                         <div class="authentication-body">
@@ -156,7 +157,7 @@
                                                         </div>
                                                         <div class="authentication-btn">
                                                             <button class="btn full-width btn-border mb-20">Log In</button>
-                                                           
+
                                                         </div>
                                                     </form>
                                                 </div>
@@ -186,14 +187,14 @@
                                                         <div class="authentication-action mb-20">
                                                             <div class="authentication-action-item">
                                                                 <div class="custom-control custom-checkbox">
-                                                                    <input  type="checkbox" class="custom-control-input" id="check2">
+                                                                    <input type="checkbox" class="custom-control-input" id="check2">
                                                                     <label class="custom-control-label" for="check2">I agree that my submitted data is being collected and stored. For further details on handling user data, see our <a href="privacy-policy.html">Privacy Policy</a>.</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="authentication-btn">
                                                             <button type="submit" class="btn full-width btn-border mb-20">Log In</button>
-                                                            
+
                                                         </div>
                                                     </form>
                                                 </div>
@@ -218,11 +219,7 @@
                                     <a href="#" class="productCart"><i class="flaticon-supermarket-basket"></i></a>
                                     <span class="option-badge">2</span>
                                 </div>
-                                <div class="navbar-option-item navbar-option-order">
-                                    <a href="shops-grid.html" class="btn text-nowrap">
-                                        Order Online <i class="flaticon-shopping-cart-black-shape"></i>
-                                    </a>
-                                </div>
+
                             </div>
                         </nav>
                     </div>

@@ -1,4 +1,5 @@
-﻿@model List<Products>
+﻿@using MyFastFoodProject.Models.ViewModels
+@model HomeVM
 <div class="header-bg header-bg-page">
     <div class="header-padding position-relative">
         <div class="header-page-shape">
@@ -87,234 +88,25 @@
             <div class="menu-main-details-for">
                 <div class="menu-main-details-item">
                     <div class="receipe-grid receipe-grid-three">
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-1.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
-                                        <h4>$4.59<del>$7.59</del></h4>
+                        @foreach (var item in Model.ProductList)
+                        {
+                            <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
+                                <div class="receipe-item-inner">
+                                    <div class="receipe-image">
+                                        <img src="~/uploadProducts/@item.ImgUrlBase" alt="receipe">
                                     </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
+                                    <div class="receipe-content">
+                                        <div class="receipe-info">
+                                            <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
+                                            <h4>@item.Price</h4>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-2.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Pizza</a></h3>
-                                        <h4>$5.12<del>$6.59</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-3.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Pizza</a></h3>
-                                        <h4>$6.57<del>$7.12</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-4.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Avocado Pizza</a></h3>
-                                        <h4>$5.12<del>$6.59</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-5.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home"asp-action="ShopGrid">Vegan Pizza</a></h3>
-                                        <h4>$7.45<del>$8.12</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-6.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Meat Pizza</a></h3>
-                                        <h4>$8.45<del>$9.24</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-2.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Ball Pizza</a></h3>
-                                        <h4>$9.45<del>$10.12</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-1.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Green Pizza</a></h3>
-                                        <h4>$8.45<del>$12.01</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-4.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
-                                        <h4>$4.59<del>$7.59</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-1.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Pepperoni Pizza</a></h3>
-                                        <h4>$4.59<del>$7.59</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-2.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Beefka Pizza</a></h3>
-                                        <h4>$5.12<del>$6.59</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="receipe-item receipe-item-black pb-30 receipe-grid-item">
-                            <div class="receipe-item-inner">
-                                <div class="receipe-image">
-                                    <img src="~/assets/images/pizza-receipe-3.png" alt="receipe">
-                                </div>
-                                <div class="receipe-content">
-                                    <div class="receipe-info">
-                                        <h3><a asp-controller="Home" asp-action="ShopGrid">Chicken Pizza</a></h3>
-                                        <h4>$6.57<del>$7.12</del></h4>
-                                    </div>
-                                    <div class="receipe-cart">
-                                        <a href="#">
-                                            <i class="flaticon-supermarket-basket"></i>
-                                            <i class="flaticon-supermarket-basket"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        }
+                        
+                      
                     </div>
                     <div class="text-center">
                         <a href="pro.html" class="btn load-more-btn">

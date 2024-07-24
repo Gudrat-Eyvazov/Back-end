@@ -1,15 +1,12 @@
 ﻿@model List<Products>
+
 @section Styles {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css" rel="stylesheet" />
-
 }
+
 <div class="page-content">
     <div class="container-fluid">
-     <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Create">Create new Product</a>
-
-        <!-- start page title -->
-        <!-- end page title -->
-
+        <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Create">Create new Product</a>
 
         <div class="row">
             <div class="col-lg-12">
@@ -18,11 +15,11 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">Tittle</th>
+                                    <th scope="col">Title</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Description</th>
-                                    
-                                    <th scope="col" class="orta">Img </th>
+                                    <th scope="col">IsActive</th>
+                                    <th scope="col">Category</th>
                                     <th scope="col">Operation</th>
                                 </tr>
                             </thead>
@@ -30,49 +27,38 @@
                                 @foreach (var item in Model)
                                 {
                                     <tr>
+                                        <td>@item.Title</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.Description</td>
                                         <td>
-                                            @item.Title
+                                            @if (item.IsActive)
+                                            {
+                                                <p>Yes</p>
+                                            }
+                                            else
+                                            {
+                                                <p>No</p>
+                                            }
                                         </td>
-
+                                        <td>@item.Category.Name</td>
                                         <td>
-                                            @item.Price
-                                        </td>
-
-                                        <td>
-                                            @item.Description
-                                        </td>
-
-                                        <td>
-                                            @item.Category.Name
-                                        </td>
-
-
-                                        
-                                        <td>
-                                            <a class="deleteBtn btn btn-danger" asp-area="Admin" asp-controller="Products" asp-action="Delete" asp-route-id="@item.Id">Delete </a>
-                                            <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id">Edit </a>
+                                           
+                                            <a class="btn btn-success" asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                                         </td>
                                     </tr>
-
                                 }
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!--end col-->
         </div>
-        <!--end row-->
-
-
     </div>
-</div><!-- End Page-content -->
-<!-- Modal -->
+</div>
+
 @section Scripts {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
-
     <script>
-
         $(document).ready(function () {
             $(document).on('click', '.deleteBtn', function (e) {
                 e.preventDefault();
@@ -88,7 +74,6 @@
                     cancelButtonColor: '#d33',
                     confirmButtonText: 'Delete',
                     cancelButtonText: 'Back'
-
                 }).then((result) => {
                     if (result.value) {
                         $.ajax({
@@ -96,55 +81,23 @@
                             type: "get",
                             dataType: "json",
                             success: function (response) {
-                                console.log(response)
+                                console.log(response);
                                 if (response.status == 200) {
-                                    Swal.fire(
-                                        'Deleted!',
-                                        '',
-                                        'success'
-                                    )
+                                    Swal.fire('Deleted!', '', 'success');
                                     element.outerHTML = '';
                                 }
                                 else if (response.status == 400) {
-                                    //toastr.error(response.message)
                                     Swal.fire({
                                         title: 'Error!',
                                         icon: 'error',
                                         confirmButtonText: 'Cool'
-                                    })
+                                    });
                                 }
                             }
                         });
                     }
                 })
             });
-        });
-        $(document).ready(() => {
-            //Edit(Get)
-            $(document).on('click', '.editBtn', (e) => {
-                const id = $(e.currentTarget).data('id');
-
-                $.ajax({
-                    url: `/Admin/Slider/Edit/${id}`,
-                    type: 'GET',
-                    success: (response) => {
-                        console.log(response)
-                        if (response.hasOwnProperty('status') && response.status === 400) {
-                            alert('tapilmadi');
-                        }
-                        else {
-                            console.log(response);
-                            $('#SliderEditForm input[name="Id"]').val(response.id);
-                            $('#SliderEditForm input[name="SubTitle"]').val(response.subTitle);
-                            $('#SliderEditForm input[name="Description"]').val(response.description);
-                            $('#SliderEditForm input[name="Title"]').val(response.title);
-
-                        }
-                    }
-                });
-            });
-
-
         });
     </script>
 }

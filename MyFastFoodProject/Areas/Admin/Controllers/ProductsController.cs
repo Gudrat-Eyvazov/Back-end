@@ -22,7 +22,8 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            return View(appDbContext.Products.Include(x => x.Category).Where(x => x.IsActive==true).ToList());
+            List<Products> products = appDbContext.Products.Include(x=>x.Category).ToList();
+            return View(products);
         }
         public IActionResult Create()
         {
@@ -103,6 +104,7 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
             modelDb.Price = productModel.Price;
             modelDb.CategoryId = productModel.CategoryId;
             modelDb.Description = productModel.Description;
+            modelDb.IsActive = productModel.IsActive;
             appDbContext.SaveChanges();
 
             if (modelDb == null)

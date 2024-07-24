@@ -11,9 +11,11 @@ namespace MyFastFoodProject.Models
         public double Price { get; set; }
         [ValidateNever]
         public bool IsActive { get; set; } = true;
+        [ValidateNever]
         public string Description { get; set; }
         [ValidateNever]
         public string ImgUrlBase { get; set; }
+        [ValidateNever]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]

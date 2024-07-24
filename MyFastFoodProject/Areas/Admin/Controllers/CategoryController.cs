@@ -9,38 +9,74 @@ namespace MyFastFoodProject.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
-        private readonly AppDbContext appDbContext;
-        private readonly IWebHostEnvironment _env;
-        public CategoryController(AppDbContext _appDbContext, IWebHostEnvironment env)
-        {
-            appDbContext = _appDbContext;
-            _env = env;
-
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-        public IActionResult Create()
-        {
-            ViewBag.Category = appDbContext.Categories.ToList();
-
-            return View();
-        }
-
-
-        [HttpPost]
-        public async Task<IActionResult> Create(Category  model)
-        {
-            if (!ModelState.IsValid)
+        
+            private readonly AppDbContext _context;
+            public CategoryController(AppDbContext context)
             {
-                ViewBag.Category = appDbContext.Categories.ToList();
-                return View(model);
+                _context = context;
             }
-            appDbContext.Categories.Add(model);
-            appDbContext.SaveChanges();
-            return RedirectToAction("Index");
+            public IActionResult Index()
+            {
+                return View(_context.Categories.ToList());
+            }
+            [HttpGet]
+            public IActionResult Add()
+            {
+                ViewBag.Categories = _context.Categories.ToList();
+                return View();
+            }
+            [HttpPost]
+            public IActionResult Add(Category category)
+            {
+                _context.Categories.Add(category);
+                _context.SaveChanges();
+                return RedirectToAction("Index")
+            }
+            public IActionResult Delete(int id)
+            {
+                var c = _context.Categories.Find(id);
+                if (c != null)
+                {
+                    _context.Categories.Remove(c);
+                }
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            [HttpGet]
+            public IActionResult Edit(int id)
+            {
+                ViewBag.Categories = _context.Categories.ToList();
+                return View(_context.Categories.Find(id));
+            }
+            [HttpPost]
+            public IActionResult Edit(Category newC)
+            {
+                var c = _context.Categories.Find(newC.Id);
+                if (c != null)
+                {
+                    c.Name = newC.Name;
+                    
+                }
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            public IActionResult Activation(int id)
+            {
+                var category = _context.Categories.Find(id);
+                if (category != null)
+                {
+                    if (category.IsActive)
+                    {
+                        category.IsActive = false;
+                    }
+                    else
+                    {
+                        category.IsActive = true;
+                    }
+                    _context.SaveChanges();
+                }
+                return RedirectToAction("Index");
+            }
         }
-    }
+   
 }

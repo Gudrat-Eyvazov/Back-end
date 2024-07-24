@@ -27,6 +27,7 @@
                                     <th scope="col">Description</th>
                                     <th scope="col">LastPrice</th>
                                     <th scope="col">NewPrice</th> 
+                                    <th scope="col">IsActive</th>
                                     <th scope="col" class="orta" >Img </th>
                                     <th scope="col">Operation</th>
                                 </tr>
@@ -53,6 +54,18 @@
                                  
                                         <td>
                                             @item.NewPrice
+                                        </td>
+
+                                        <td>
+                                            @if (item.IsCheck)
+                                            {
+                                                <p>Yes</p>
+                                            }
+                                            else
+                                            {
+                                                <p>No</p>
+
+                                            }
                                         </td>
                                     
                                         <td>

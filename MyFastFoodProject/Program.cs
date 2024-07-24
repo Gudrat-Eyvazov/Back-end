@@ -18,7 +18,7 @@ builder.Services.AddIdentity<ProgramUser, IdentityRole>()
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequireDigit = true; //R?q?m t?l?b edin
-    options.Password.RequireLowercase = true; //Kiçik h?rf t?l?b edin
+    options.Password.RequireLowercase = true; //Kiçik herf t?l?b edin
     options.Password.RequireUppercase = true; //Böyük h?rf t?l?b edin
     options.Password.RequiredLength = 6; //T?l?b olunan uzunluq...
     options.Password.RequireNonAlphanumeric = false; //@ * ! ve.s kimi simvollar olmalidi

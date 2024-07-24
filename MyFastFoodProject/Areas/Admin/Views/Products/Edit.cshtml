@@ -83,12 +83,19 @@
                                 {
                                     <div class="col-md-3">
                                         <img height="200" src="~/uploadProducts/@item.ImgUrl" />
-                                        <a asp-area="Admin" asp-controller="Products" asp-action="DeleteImage" asp-route-id="@item.Id" class="deleteBtn btn btn-danger">Delete </a>
+                                        <a asp-area="Admin" asp-controller="Products" asp-action="DeleteImage" asp-route-id="@item.Id" class="deleteBtn btn btn-danger">
+                                            </a>
                                     </div>
                                 }
                                 <input asp-for="ImagesFiles" type="file" class="form-control" multiple />
                             </div>
 
+                            <div class="col-md-2">
+                                <label>
+                                    Is Active
+                                </label>
+                                <input asp-for="IsActive" class="form-check" />
+                            </div>
                      
                             <div class="col-md-2">
                                 <button type="submit" class="btn btn-danger mt-3 btn-block">Edit </button>

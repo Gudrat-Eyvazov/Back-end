@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyFastFoodProject.DAL;
 using MyFastFoodProject.Models;
+using MyFastFoodProject.Models.ViewModels;
 using System.Diagnostics;
 
 namespace MyFastFoodProject.Controllers
@@ -17,13 +18,25 @@ namespace MyFastFoodProject.Controllers
 
         public IActionResult Index()
         {
-            //List<Slider>sliderlist = new List<Slider>();
-        
-            return View(appDbContext.Sliders.Where(x=>x.IsCheck !=false).ToList());
+            HomeVM homeVM = new HomeVM
+            {
+                SliderList = appDbContext.Sliders.Where(x => x.IsCheck == true).ToList(),
+                ProductList = appDbContext.Products.Where(x => x.IsActive == true).ToList()
+            };
+
+
+            return View(homeVM);
         }
         public IActionResult Menu()
         {
-            return View();
+            HomeVM homeVM = new HomeVM
+            {
+                SliderList = appDbContext.Sliders.Where(x => x.IsCheck == true).ToList(),
+                ProductList = appDbContext.Products.Where(x => x.IsActive == true).ToList()
+            };
+
+
+            return View(homeVM);
         }
         public IActionResult About()
         {
